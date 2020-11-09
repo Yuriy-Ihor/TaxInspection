@@ -10,8 +10,9 @@
         <ListView x:Name="ListOfJuridicalPersons" HorizontalAlignment="Left" Height="302" Margin="67,32,0,0" VerticalAlignment="Top" Width="657">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Ім'я" Width="200" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Назва" Width="210" DisplayMemberBinding="{Binding Name}" />
                     <GridViewColumn Header="Дата реєстрації" Width="230" DisplayMemberBinding="{Binding RegistrationDate}" />
+                    <GridViewColumn Header="Код ЄДРПОУ" Width="215" DisplayMemberBinding="{Binding RegistrationCode}" />
                 </GridView>
             </ListView.View>
         </ListView>
