@@ -42,7 +42,7 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            NaturalPerson natPerson = new NaturalPerson();
+            NaturalPerson natPerson = null;
             string[] personName = PayersNamesBox.autoTextBox.Text.Split(' ');
 
             foreach (var item in ((App)Application.Current).NaturalPersons)
@@ -51,6 +51,12 @@ namespace TaxInspection.Windows
                 {
                     natPerson = item;
                 }
+            }
+
+            if(natPerson == null)
+            {
+                MessageBox.Show("Фізичної особи з таким іменем не існує!");
+                return;
             }
 
             SQLiteConnection sqlite_conn = new SQLiteConnection(App.DatabaseConnection);

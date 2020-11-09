@@ -32,7 +32,7 @@ namespace TaxInspection.Windows
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Tax tax = new Tax();
+            Tax tax = null;
             foreach(var item in ((App)Application.Current).Taxes)
             {
                 if(item.TaxName == TaxNamesBox.autoTextBox.Text)
@@ -41,19 +41,31 @@ namespace TaxInspection.Windows
                 }
             }
 
+            if(tax == null)
+            {
+                MessageBox.Show("Податку з такою назвою не існує!");
+                return;
+            }
+
             if (!tax.IsValid)
             {
                 MessageBox.Show("Цей податок вже не є чинним!");
                 return;
             }
 
-            JuridicalPerson jurPerson = new JuridicalPerson();
+            JuridicalPerson jurPerson = null;
             foreach (var item in ((App)Application.Current).JuridicalPersons)
             {
                 if (item.Name == PayersNamesBox.autoTextBox.Text)
                 {
                     jurPerson = item;
                 }
+            }
+
+            if (jurPerson == null)
+            {
+                MessageBox.Show("Юридичної особи з такою назвою не існує!");
+                return;
             }
 
             SQLiteConnection sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
