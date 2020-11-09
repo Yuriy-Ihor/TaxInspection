@@ -25,26 +25,17 @@ namespace TaxInspection
 
         private void createTables()
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
-
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-            sqlite_conn.Open();
-
-            sqlite_cmd = sqlite_conn.CreateCommand();
-
-            sqlite_cmd.CommandText = "CREATE TABLE NaturalPersons (Id integer primary key, Name varchar(100), Surname varchar(100), IdentificationCode integer, PassportCode integer);";
-            sqlite_cmd.ExecuteNonQuery();
-            sqlite_cmd.CommandText = "CREATE TABLE JuridicalPersons (Id integer primary key, Name varchar(100), RegistrationDate DATE, RegistrationCode integer);";
-            sqlite_cmd.ExecuteNonQuery();
-            sqlite_cmd.CommandText = "CREATE TABLE Taxes (Id integer primary key, TaxName varchar(100), DocumentName varchar(100), IsValid BIT);";
-            sqlite_cmd.ExecuteNonQuery();
-            sqlite_cmd.CommandText = "CREATE TABLE TaxesPayedByJurPersons (Id integer primary key, TaxId integer, PayerId integer, TaxName varchar(100), PayerName varchar(100), OnPayedDate DATE, Amount integer);";
-            sqlite_cmd.ExecuteNonQuery();
-            sqlite_cmd.CommandText = "CREATE TABLE TaxesPayedByNatPersons (Id integer primary key, TaxId integer, PayerId integer, TaxName varchar(100), PayerName varchar(100), PayerSurname varchar(100), OnPayedDate DATE, Amount integer);";
-            sqlite_cmd.ExecuteNonQuery();
-
-            sqlite_conn.Close();
+            string commandText1 = "CREATE TABLE NaturalPersons (Id integer primary key, Name varchar(100), Surname varchar(100), IdentificationCode integer, PassportCode integer);";
+            string commandText2 = "CREATE TABLE JuridicalPersons (Id integer primary key, Name varchar(100), RegistrationDate DATE, RegistrationCode integer);";
+            string commandText3 = "CREATE TABLE Taxes (Id integer primary key, TaxName varchar(100), DocumentName varchar(100), IsValid BIT);";
+            string commandText4 = "CREATE TABLE TaxesPayedByJurPersons (Id integer primary key, TaxId integer, PayerId integer, TaxName varchar(100), PayerName varchar(100), OnPayedDate DATE, Amount integer);";
+            string commandText5 = "CREATE TABLE TaxesPayedByNatPersons (Id integer primary key, TaxId integer, PayerId integer, TaxName varchar(100), PayerName varchar(100), PayerSurname varchar(100), OnPayedDate DATE, Amount integer);";
+      
+            Extensions.Tools.ExecuteQuery(commandText1);
+            Extensions.Tools.ExecuteQuery(commandText2);
+            Extensions.Tools.ExecuteQuery(commandText3);
+            Extensions.Tools.ExecuteQuery(commandText4);
+            Extensions.Tools.ExecuteQuery(commandText5);
         }
 
         private void readAllTaxesPayedByJurPersonsFromDatabase()
