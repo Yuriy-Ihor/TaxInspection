@@ -1,0 +1,17 @@
+﻿<Window x:Class="TaxInspection.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxInspection"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="button" Content="Види податків" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="28,40,0,0" Height="54" Click="ShowAllTaxes" />
+        <Button x:Name="button1" Content="Фізичні особи" HorizontalAlignment="Left" Height="54" Margin="158,40,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllNaturalPersons" />
+        <Button x:Name="button2" Content="Юридичні особи" HorizontalAlignment="Left" Height="54" Margin="288,40,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllJuridicalPersons" />
+        <Button x:Name="button3" Content="Податки сплачені&#xa;юридичними особами" HorizontalAlignment="Left" Height="45" Margin="50,120,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByJuridicalPersons" />
+        <Button x:Name="button4" Content="Податки сплачені&#xA;фізичними особами" HorizontalAlignment="Left" Height="45" Margin="227,120,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByNaturalPersons" />
+
+    </Grid>
+</Window>

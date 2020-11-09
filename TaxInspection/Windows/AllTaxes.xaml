@@ -1,0 +1,27 @@
+﻿ <Window x:Class="TaxInspection.Windows.AllTaxes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AllTaxes" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="ListOfTaxes" HorizontalAlignment="Left" SelectionMode="Single" Height="270" Margin="47,42,0,0" VerticalAlignment="Top" Width="707">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Назва податку" Width="200" DisplayMemberBinding="{Binding TaxName}" />
+                    <GridViewColumn Header="Дійсний" Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding Path=IsValid, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Документ" Width="230" DisplayMemberBinding="{Binding DocumentName}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="CreateNewTaxButton" Content="Створити новий податок" HorizontalAlignment="Left" Height="44" Margin="231,356,0,0" VerticalAlignment="Top" Width="150" Click="AddNewTax"/>
+        <Button x:Name="RemoveSelectedTaxButton" Content="Видалити вибраний &#xD;&#xA;податок" HorizontalAlignment="Left" Height="44" Margin="399,356,0,0" VerticalAlignment="Top" Width="150" Click="RemoveSelectedTax"/>
+    </Grid>
+</Window>

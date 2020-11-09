@@ -1,0 +1,21 @@
+﻿<Window x:Class="TaxInspection.Windows.CreateNewTaxByJurPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxInspection.Windows"
+        xmlns:uc="clr-namespace:WPFAutoCompleteTextBox.Views.UserControls"
+        mc:Ignorable="d"
+        Title="CreateNewTaxByJurPerson" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="TaxName" Content="Назва податку" HorizontalAlignment="Left" Height="35" Margin="43,43,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
+        <Label x:Name="PayerName" Content="Назва платника" HorizontalAlignment="Left" Height="35" Margin="43,117,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
+        <Label x:Name="label" Content="Дата оплати" HorizontalAlignment="Left" Height="35" Margin="43,193,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
+        <DatePicker x:Name="PayDate" HorizontalAlignment="Left" Height="41" Margin="222,187,0,0" VerticalAlignment="Top" Width="165"/>
+        <uc:AutoCompleteTextBoxUserControl x:Name="TaxNamesBox" Margin="211,43,354,323"/>
+        <uc:AutoCompleteTextBoxUserControl x:Name="PayersNamesBox" Margin="211,117,354,249"/>
+        <Button x:Name="button" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="329,338,0,0" VerticalAlignment="Top" Width="153" Click="button_Click"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="35" Margin="548,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Background="#FFF1F1F1"  />
+        <Label x:Name="label1" Content="Розмір оплати" HorizontalAlignment="Left" Height="36" Margin="447,51,0,0" VerticalAlignment="Top" Width="96"/>
+    </Grid>
+</Window>

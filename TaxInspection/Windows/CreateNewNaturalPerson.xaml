@@ -1,0 +1,21 @@
+﻿<Window x:Class="TaxInspection.Windows.CreateNewNaturalPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxInspection.Windows"
+        mc:Ignorable="d"
+        Title="CreateNewNaturalPerson" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Ім'я" HorizontalAlignment="Left" Height="41" Margin="95,57,0,0" VerticalAlignment="Top" Width="71" FontSize="20"/>
+        <Label x:Name="label_Copy" Content="Прізвище" HorizontalAlignment="Left" Height="44" Margin="95,115,0,0" VerticalAlignment="Top" Width="122" FontSize="20"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="41" Margin="286,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Height="41" Margin="286,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
+        <Button x:Name="button" Content="Додати нову фізичну особу" HorizontalAlignment="Left" Height="70" Margin="286,296,0,0" VerticalAlignment="Top" Width="258" FontSize="18" Click="CreateNewPerson"/>
+        <TextBox x:Name="IdentificationCode" HorizontalAlignment="Left" Height="41" Margin="286,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
+        <TextBox x:Name="PassportCode" HorizontalAlignment="Left" Height="41" Margin="286,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
+        <Label x:Name="label_Copy1" Content="Ідентифікаційний" HorizontalAlignment="Left" Height="44" Margin="95,170,0,0" VerticalAlignment="Top" Width="172" FontSize="20"/>
+        <Label x:Name="label_Copy2" Content="Код паспорту" HorizontalAlignment="Left" Height="44" Margin="95,224,0,0" VerticalAlignment="Top" Width="172" FontSize="20"/>
+
+    </Grid>
+</Window>
