@@ -4,9 +4,6 @@ using TaxInspection.Database_elements;
 
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for AllTaxes.xaml
-    /// </summary>
     public partial class AllTaxes : Window
     {
         public AllTaxes()
@@ -27,17 +24,7 @@ namespace TaxInspection.Windows
 
             if (item != null)
             {
-                SQLiteConnection sqlite_conn;
-                SQLiteCommand sqlite_cmd;
-
-                sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-                sqlite_conn.Open();
-
-                sqlite_cmd = sqlite_conn.CreateCommand();
-                sqlite_cmd.CommandText = "DELETE FROM Taxes WHERE Id = " + item.TaxId;
-                sqlite_cmd.ExecuteNonQuery();
-
-                sqlite_conn.Close();
+                Extensions.Tools.ExecuteQuery("DELETE FROM Taxes WHERE Id = " + item.TaxId);
 
                 ((App)Application.Current).Taxes.Remove(item);
             }

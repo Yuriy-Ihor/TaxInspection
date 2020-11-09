@@ -4,11 +4,9 @@ using TaxInspection.Database_elements;
 
 namespace TaxInspection
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
+
         public static string DatabaseConnection = @"Data Source=database.db;Version=3;Compress=True;";
 
         public ObservableCollection<Tax> Taxes { get; set; } = new ObservableCollection<Tax>();
@@ -17,9 +15,7 @@ namespace TaxInspection
         public ObservableCollection<TaxPayedByNaturalPerson> TaxesPayedByNatPersons { get; set; } = new ObservableCollection<TaxPayedByNaturalPerson>();
         public ObservableCollection<TaxPayedByJuridicalPerson> TaxesPayedByJurPersons { get; set; } = new ObservableCollection<TaxPayedByJuridicalPerson>();
 
-        private void AppStartup(object sender, StartupEventArgs args)
-        { 
+        private void AppStartup(object sender, StartupEventArgs args) { }
 
-        }
     }
 }
