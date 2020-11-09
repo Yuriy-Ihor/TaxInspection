@@ -5,9 +5,6 @@ using Finisar.SQLite;
 
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for CreateNewTaxByNatPerson.xaml
-    /// </summary>
     public partial class CreateNewTaxByNatPerson : Window
     {
         public CreateNewTaxByNatPerson()
@@ -37,6 +34,12 @@ namespace TaxInspection.Windows
                 {
                     tax = item;
                 }
+            }
+
+            if(!tax.IsValid)
+            {
+                MessageBox.Show("Цей податок вже не є чинним!");
+                return;
             }
 
             NaturalPerson natPerson = new NaturalPerson();

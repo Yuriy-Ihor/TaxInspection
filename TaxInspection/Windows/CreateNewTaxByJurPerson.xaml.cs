@@ -41,6 +41,12 @@ namespace TaxInspection.Windows
                 }
             }
 
+            if (!tax.IsValid)
+            {
+                MessageBox.Show("Цей податок вже не є чинним!");
+                return;
+            }
+
             JuridicalPerson jurPerson = new JuridicalPerson();
             foreach (var item in ((App)Application.Current).JuridicalPersons)
             {
