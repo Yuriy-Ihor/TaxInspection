@@ -41,7 +41,13 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if(tax == null)
+            if (PayDate.SelectedDate.Value > DateTime.Today)
+            {
+                MessageBox.Show("Помилка! Неприпустима дата!");
+                return;
+            }
+
+            if (tax == null)
             {
                 MessageBox.Show("Податку з такою назвою не існує!");
                 return;

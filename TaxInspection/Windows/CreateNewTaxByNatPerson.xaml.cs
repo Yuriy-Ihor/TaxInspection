@@ -1,4 +1,5 @@
-﻿using TaxInspection.Database_elements;
+﻿using System;
+using TaxInspection.Database_elements;
 using System.Collections.Generic;
 using System.Windows;
 using Finisar.SQLite;
@@ -36,7 +37,13 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if(!tax.IsValid)
+            if (PayDate.SelectedDate.Value > DateTime.Today)
+            {
+                MessageBox.Show("Помилка! Неприпустима дата!");
+                return;
+            }
+
+            if (!tax.IsValid)
             {
                 MessageBox.Show("Цей податок вже не є чинним!");
                 return;
