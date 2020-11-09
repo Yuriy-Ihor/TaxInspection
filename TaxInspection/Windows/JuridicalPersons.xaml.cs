@@ -16,28 +16,18 @@ namespace TaxInspection.Windows
             ListOfJuridicalPersons.ItemsSource = ((App)Application.Current).JuridicalPersons;
         }
 
-        private void AddNewPerson_Click(object sender, RoutedEventArgs e)
+        private void AddNewPerson(object sender, RoutedEventArgs e)
         {
             var window = new CreateNewJuridicalPerson();
             window.Show();
         }
 
-        private void RemoveSelectedPerson_Click(object sender, RoutedEventArgs e)
+        private void RemoveSelectedPerson(object sender, RoutedEventArgs e)
         {
             var item = ListOfJuridicalPersons.SelectedItem as JuridicalPerson;
             if (item != null)
             {
-                SQLiteConnection sqlite_conn;
-                SQLiteCommand sqlite_cmd;
-
-                sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-                sqlite_conn.Open();
-
-                sqlite_cmd = sqlite_conn.CreateCommand();
-                sqlite_cmd.CommandText = "DELETE FROM JuridicalPersons WHERE Id = " + item.Id;
-                sqlite_cmd.ExecuteNonQuery();
-
-                sqlite_conn.Close();
+                Extensions.Tools.ExecuteQuery("DELETE FROM JuridicalPersons WHERE Id = " + item.Id);
 
                 ((App)Application.Current).JuridicalPersons.Remove(item);
             }

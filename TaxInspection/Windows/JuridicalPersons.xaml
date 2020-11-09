@@ -16,8 +16,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="AddNewPerson" Content="Додати нову юридичну особу" HorizontalAlignment="Left" Height="39" Margin="138,359,0,0" VerticalAlignment="Top" Width="210" FontSize="14" Click="AddNewPerson_Click"/>
-        <Button x:Name="RemoveSelectedPerson" Content="Видалити вибрану особу" HorizontalAlignment="Left" Height="39" Margin="411,359,0,0" VerticalAlignment="Top" Width="210" FontSize="14" Click="RemoveSelectedPerson_Click"/>
+        <Button x:Name="AddNewPersonButton" Content="Додати нову юридичну особу" HorizontalAlignment="Left" Height="39" Margin="138,359,0,0" VerticalAlignment="Top" Width="210" FontSize="14" Click="AddNewPerson"/>
+        <Button x:Name="RemoveSelectedPersonButton" Content="Видалити вибрану особу" HorizontalAlignment="Left" Height="39" Margin="411,359,0,0" VerticalAlignment="Top" Width="210" FontSize="14" Click="RemoveSelectedPerson"/>
 
     </Grid>
 </Window>

@@ -20,17 +20,7 @@ namespace TaxInspection.Windows
             var item = ListOfNaturalPersons.SelectedItem as NaturalPerson;
             if (item != null)
             {
-                SQLiteConnection sqlite_conn;
-                SQLiteCommand sqlite_cmd;
-
-                sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-                sqlite_conn.Open();
-
-                sqlite_cmd = sqlite_conn.CreateCommand();
-                sqlite_cmd.CommandText = "DELETE FROM NaturalPersons WHERE Id = " + item.Id;
-                sqlite_cmd.ExecuteNonQuery();
-
-                sqlite_conn.Close();
+                Extensions.Tools.ExecuteQuery("DELETE FROM NaturalPersons WHERE Id = " + item.Id);
 
                 ((App)Application.Current).NaturalPersons.Remove(item);
             }

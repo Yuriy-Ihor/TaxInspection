@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaxInspection.Windows"
         mc:Ignorable="d"
-        Title="TaxesPayedByNatPersons" Height="450" Width="750">
+        Title="TaxesPayedByNatPersons" Height="450" Width="760">
     <Grid>
         <ListView x:Name="Taxes" HorizontalAlignment="Left" Height="323" Margin="60,30,0,0" VerticalAlignment="Top" Width="635">
             <ListView.View>

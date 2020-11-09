@@ -1,13 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Finisar.SQLite;
 
 namespace TaxInspection.Extensions
 {
     public static class Tools
     {
+        public static void ExecuteQuery(string query)
+        {
+            SQLiteConnection sqlite_conn;
+            SQLiteCommand sqlite_cmd;
+
+            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
+            sqlite_conn.Open();
+
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            sqlite_cmd.CommandText = query;
+            sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_conn.Close();
+        }
+
+        #region Converters
+
         public static string ConvertDayTimeToSqlDate(DateTime date)
         {
             string month = (date.Month < 10 ? '0' + date.Month.ToString() : date.Month.ToString());
@@ -33,5 +47,8 @@ namespace TaxInspection.Extensions
 
             return dateTime;
         }
+
+        #endregion
+
     }
 }

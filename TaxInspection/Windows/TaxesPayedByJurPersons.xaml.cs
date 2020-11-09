@@ -21,26 +21,9 @@ namespace TaxInspection.Windows
             var item = Taxes.SelectedItem as TaxPayedByJuridicalPerson;
             if (item != null)
             {
-                SQLiteConnection sqlite_conn;
-                SQLiteCommand sqlite_cmd;
+                Extensions.Tools.ExecuteQuery("DELETE FROM TaxesPayedByJurPersons WHERE Id = " + item.Id);
 
-                sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-                sqlite_conn.Open();
-
-                sqlite_cmd = sqlite_conn.CreateCommand();
-                sqlite_cmd.CommandText = "DELETE FROM TaxesPayedByJurPersons WHERE Id = " + item.Id;
-                sqlite_cmd.ExecuteNonQuery();
-
-                sqlite_conn.Close();
-
-                try
-                {
-                    ((App)Application.Current).TaxesPayedByJurPersons.Remove(item);
-                }
-                catch
-                {
-                    MessageBox.Show("No item found: " + item.ToString());
-                }
+                ((App)Application.Current).TaxesPayedByJurPersons.Remove(item);
             }
         }
 
