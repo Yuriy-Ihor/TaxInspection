@@ -14,12 +14,29 @@ namespace TaxInspection
         {
             InitializeComponent();
 
-            readAllNaturalPersonsFromDatabase();
-            readAllJuridicalPersonsFromDatabase();
-            readAllTaxesFromDatabase();
-            readAllTaxesPayedByNatPersonsFromDatabase();
-            readAllTaxesPayedByJurPersonsFromDatabase();
+            SQLiteConnection sqlite_conn;
+            SQLiteCommand sqlite_cmd;
+            SQLiteDataReader sqlite_datareader;
 
+            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
+            sqlite_conn.Open();
+
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            readAllNaturalPersonsFromDatabase(sqlite_cmd, out sqlite_datareader);
+
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            readAllJuridicalPersonsFromDatabase(sqlite_cmd, out sqlite_datareader);
+
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            readAllTaxesFromDatabase(sqlite_cmd, out sqlite_datareader);
+
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            readAllTaxesPayedByNatPersonsFromDatabase(sqlite_cmd, out sqlite_datareader);
+
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            readAllTaxesPayedByJurPersonsFromDatabase(sqlite_cmd, out sqlite_datareader);
+
+            sqlite_conn.Close();
             DataLoaded = true;
         }
 
@@ -38,19 +55,9 @@ namespace TaxInspection
             Extensions.Tools.ExecuteQuery(commandText5);
         }
 
-        private void readAllTaxesPayedByJurPersonsFromDatabase()
+        private void readAllTaxesPayedByJurPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
-            SQLiteDataReader sqlite_datareader;
-
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-            sqlite_conn.Open();
-
-            sqlite_cmd = sqlite_conn.CreateCommand();
-
             sqlite_cmd.CommandText = "SELECT * FROM TaxesPayedByJurPersons";
-
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             while (sqlite_datareader.Read())
@@ -70,21 +77,10 @@ namespace TaxInspection
 
             if (((App)Application.Current).TaxesPayedByJurPersons.Count > 0)
                 TaxPayedByJuridicalPerson.MaxId = ((App)Application.Current).TaxesPayedByJurPersons[((App)Application.Current).TaxesPayedByJurPersons.Count - 1].Id + 1;
-
-            sqlite_conn.Close();
         }
 
-        private void readAllTaxesPayedByNatPersonsFromDatabase()
+        private void readAllTaxesPayedByNatPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
-            SQLiteDataReader sqlite_datareader;
-
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-            sqlite_conn.Open();
-
-            sqlite_cmd = sqlite_conn.CreateCommand();
-
             sqlite_cmd.CommandText = "SELECT * FROM TaxesPayedByNatPersons";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
@@ -106,25 +102,11 @@ namespace TaxInspection
 
             if (((App)Application.Current).TaxesPayedByNatPersons.Count > 0)
                 Tax.MaxId = ((App)Application.Current).TaxesPayedByNatPersons[((App)Application.Current).TaxesPayedByNatPersons.Count - 1].TaxId + 1;
-
-            sqlite_conn.Close();
         }
 
-        private void readAllTaxesFromDatabase()
+        private void readAllTaxesFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
-            SQLiteDataReader sqlite_datareader;
-
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-            sqlite_conn.Open();
-
-            sqlite_cmd = sqlite_conn.CreateCommand();
-
-            sqlite_cmd.ExecuteNonQuery();
-
             sqlite_cmd.CommandText = "SELECT * FROM Taxes";
-
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             while (sqlite_datareader.Read())
@@ -142,23 +124,11 @@ namespace TaxInspection
 
             if (((App)Application.Current).Taxes.Count > 0)
                 Tax.MaxId = ((App)Application.Current).Taxes[((App)Application.Current).Taxes.Count - 1].TaxId + 1;
-
-            sqlite_conn.Close();
         }
 
-        private void readAllNaturalPersonsFromDatabase()
+        private void readAllNaturalPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
-            SQLiteDataReader sqlite_datareader;
-
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-            sqlite_conn.Open();
-
-            sqlite_cmd = sqlite_conn.CreateCommand();
-
             sqlite_cmd.CommandText = "SELECT * FROM NaturalPersons";
-
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             while (sqlite_datareader.Read())
@@ -170,23 +140,11 @@ namespace TaxInspection
 
             if (((App)Application.Current).NaturalPersons.Count > 0)
                 JuridicalPerson.MaxId = ((App)Application.Current).NaturalPersons[((App)Application.Current).NaturalPersons.Count - 1].Id + 1;
-
-            sqlite_conn.Close();
         }
 
-        private void readAllJuridicalPersonsFromDatabase()
+        private void readAllJuridicalPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
-            SQLiteDataReader sqlite_datareader;
-
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
-            sqlite_conn.Open();
-
-            sqlite_cmd = sqlite_conn.CreateCommand();
-           
             sqlite_cmd.CommandText = "SELECT * FROM JuridicalPersons";
-
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             while (sqlite_datareader.Read())
@@ -200,8 +158,6 @@ namespace TaxInspection
 
             if(((App)Application.Current).JuridicalPersons.Count > 0)
                 JuridicalPerson.MaxId = ((App)Application.Current).JuridicalPersons[((App)Application.Current).JuridicalPersons.Count - 1].Id + 1;
-
-            sqlite_conn.Close();
         }
 
         private void ShowAllTaxes(object sender, RoutedEventArgs e)
