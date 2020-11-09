@@ -27,10 +27,29 @@ namespace TaxInspection.Windows
             var item = ListOfJuridicalPersons.SelectedItem as JuridicalPerson;
             if (item != null)
             {
+                if(checkIfPersonIsBusy(item))
+                {
+                    MessageBox.Show("Дана юридична особа вже записана в базі сплачених податків!");
+                    return;
+                }
+
                 Extensions.Tools.ExecuteQuery("DELETE FROM JuridicalPersons WHERE Id = " + item.Id);
 
                 ((App)Application.Current).JuridicalPersons.Remove(item);
             }
+        }
+
+        private bool checkIfPersonIsBusy(JuridicalPerson person)
+        {
+            for (int i = 0; i < ((App)Application.Current).TaxesPayedByJurPersons.Count; i++)
+            {
+                var item = ((App)Application.Current).TaxesPayedByJurPersons[i];
+
+                if (item.PayerId == person.Id)
+                    return true;
+            }
+
+            return false;
         }
 
     }

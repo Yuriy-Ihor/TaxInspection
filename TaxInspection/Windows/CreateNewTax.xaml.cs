@@ -31,7 +31,6 @@ namespace TaxInspection.Windows
 
             ((App)Application.Current).Taxes.Add(newTax);
             sqlite_conn.Close();
-
         }
     }
 }
