@@ -18,6 +18,7 @@ namespace TaxInspection.Windows
             if(string.IsNullOrEmpty(Name.Text))
             {
                 MessageBox.Show("Неприпустиме значення імені!");
+                return;
             }
 
             int code = 0;
@@ -25,6 +26,7 @@ namespace TaxInspection.Windows
             if(Date.SelectedDate.Value > DateTime.Today)
             {
                 MessageBox.Show("Помилка! Неприпустима дата!");
+                return;
             }
 
             if(!int.TryParse(Code.Text, out code))
@@ -33,8 +35,11 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            if (!isCodeAppropriate(code))
+            if (code > 99999999)
+            {
+                MessageBox.Show("Помилка! Код ЄДРПОУ недопустимого значення!");
                 return;
+            }
 
             SQLiteConnection sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
 
@@ -54,17 +59,6 @@ namespace TaxInspection.Windows
             sqlite_conn.Close();
 
             MessageBox.Show("Успішно додана нова юридична особа: " + newPerson.Name);
-        }
-
-        private bool isCodeAppropriate(int number)
-        {
-            if (number > 99999999 || number < 11111111)
-            {
-                MessageBox.Show("Помилка! Код ЄДРПОУ недопустимого значення!");
-                return false;
-            }
-
-            return true;
         }
 
         private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");

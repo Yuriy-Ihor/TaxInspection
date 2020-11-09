@@ -7,12 +7,12 @@ namespace TaxInspection.Database_elements
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public int IdentificationCode { get; set; }
+        public long IdentificationCode { get; set; }
         public int PassportCode { get; set; }
 
         public NaturalPerson() { }
 
-        public NaturalPerson(int id, string name, string surname, int identCode, int passportCode)
+        public NaturalPerson(int id, string name, string surname, long identCode, int passportCode)
         {
             Id = id;
             Name = name;

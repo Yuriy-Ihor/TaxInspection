@@ -12,8 +12,8 @@
         <TextBox x:Name="Name" HorizontalAlignment="Left" Height="41" Margin="286,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
         <TextBox x:Name="Surname" HorizontalAlignment="Left" Height="41" Margin="286,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
         <Button x:Name="button" Content="Додати нову фізичну особу" HorizontalAlignment="Left" Height="70" Margin="286,296,0,0" VerticalAlignment="Top" Width="258" FontSize="18" Click="CreateNewPerson"/>
-        <TextBox x:Name="IdentificationCode" HorizontalAlignment="Left" Height="41" Margin="286,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
-        <TextBox x:Name="PassportCode" HorizontalAlignment="Left" Height="41" Margin="286,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
+        <TextBox x:Name="IdentificationCode" MaxLength="10" PreviewTextInput="CheckIdentificationCodeInput" HorizontalAlignment="Left" Height="41" Margin="286,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
+        <TextBox x:Name="PassportCode" MaxLength="8" PreviewTextInput="CheckPassportCodeInput" HorizontalAlignment="Left" Height="41" Margin="286,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" />
         <Label x:Name="label_Copy1" Content="Ідентифікаційний" HorizontalAlignment="Left" Height="44" Margin="95,170,0,0" VerticalAlignment="Top" Width="172" FontSize="20"/>
         <Label x:Name="label_Copy2" Content="Код паспорту" HorizontalAlignment="Left" Height="44" Margin="95,224,0,0" VerticalAlignment="Top" Width="172" FontSize="20"/>
 

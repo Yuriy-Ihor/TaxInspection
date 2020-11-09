@@ -42,7 +42,7 @@ namespace TaxInspection
 
         private void createTables()
         {
-            string commandText1 = "CREATE TABLE NaturalPersons (Id integer primary key, Name varchar(100), Surname varchar(100), IdentificationCode integer, PassportCode integer);";
+            string commandText1 = "CREATE TABLE NaturalPersons (Id integer primary key, Name varchar(100), Surname varchar(100), IdentificationCode BIGINT, PassportCode integer);";
             string commandText2 = "CREATE TABLE JuridicalPersons (Id integer primary key, Name varchar(100), RegistrationDate DATE, RegistrationCode integer);";
             string commandText3 = "CREATE TABLE Taxes (Id integer primary key, TaxName varchar(100), DocumentName varchar(100), IsValid BIT);";
             string commandText4 = "CREATE TABLE TaxesPayedByJurPersons (Id integer primary key, TaxId integer, PayerId integer, TaxName varchar(100), PayerName varchar(100), OnPayedDate DATE, Amount integer);";
@@ -133,7 +133,7 @@ namespace TaxInspection
 
             while (sqlite_datareader.Read())
             {
-                NaturalPerson newPerson = new NaturalPerson(int.Parse(sqlite_datareader["Id"].ToString()), sqlite_datareader["Name"].ToString(), sqlite_datareader["Surname"].ToString(), int.Parse(sqlite_datareader["IdentificationCode"].ToString()), int.Parse(sqlite_datareader["PassportCode"].ToString()));
+                NaturalPerson newPerson = new NaturalPerson(int.Parse(sqlite_datareader["Id"].ToString()), sqlite_datareader["Name"].ToString(), sqlite_datareader["Surname"].ToString(), long.Parse(sqlite_datareader["IdentificationCode"].ToString()), int.Parse(sqlite_datareader["PassportCode"].ToString()));
 
                 ((App)Application.Current).NaturalPersons.Add(newPerson);
             }

@@ -12,7 +12,7 @@
                 <GridView>
                     <GridViewColumn Header="Назва податку" Width="100" DisplayMemberBinding="{Binding TaxName}" />
                     <GridViewColumn Header="Ім'я платника" Width="100" DisplayMemberBinding="{Binding PayerName}" />
-                    <GridViewColumn Header="Прізвище платника" Width="150" DisplayMemberBinding="{Binding PayerSurame}" />
+                    <GridViewColumn Header="Прізвище платника" Width="150" DisplayMemberBinding="{Binding PayerSurname}" />
                     <GridViewColumn Header="Дата оплати" Width="120" DisplayMemberBinding="{Binding OnPayedDate}" />
                     <GridViewColumn Header="Сума" Width="130" DisplayMemberBinding="{Binding Amount}" />
                 </GridView>
