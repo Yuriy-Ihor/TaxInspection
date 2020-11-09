@@ -1,13 +1,8 @@
-﻿
-using System.Windows;
-using Finisar.SQLite;
+﻿using System.Windows;
 using TaxInspection.Database_elements;
 
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for TaxesPayedByJurPersons.xaml
-    /// </summary>
     public partial class TaxesPayedByJurPersons : Window
     {
         public TaxesPayedByJurPersons()

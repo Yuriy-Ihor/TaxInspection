@@ -4,9 +4,6 @@ using TaxInspection.Database_elements;
 
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for NaturalPersons.xaml
-    /// </summary>
     public partial class NaturalPersons : Window
     {
         public NaturalPersons()

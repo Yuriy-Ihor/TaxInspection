@@ -6,7 +6,6 @@ namespace TaxInspection
 {
     public partial class App : Application
     {
-
         public static string DatabaseConnection = @"Data Source=database.db;Version=3;Compress=True;";
 
         public ObservableCollection<Tax> Taxes { get; set; } = new ObservableCollection<Tax>();
