@@ -7,10 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button" Content="Види податків" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="189,130,0,0" Height="54" Click="ShowAllTaxes" />
-        <Button x:Name="button1" Content="Фізичні особи" HorizontalAlignment="Left" Height="54" Margin="319,130,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllNaturalPersons" />
-        <Button x:Name="button2" Content="Юридичні особи" HorizontalAlignment="Left" Height="54" Margin="449,130,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllJuridicalPersons" />
-        <Button x:Name="button3" Content="Податки сплачені&#xa;юридичними особами" HorizontalAlignment="Left" Height="45" Margin="211,210,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByJuridicalPersons" />
-        <Button x:Name="button4" Content="Податки сплачені&#xA;фізичними особами" HorizontalAlignment="Left" Height="45" Margin="388,210,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByNaturalPersons" />
+        <Grid.Background>
+            <ImageBrush ImageSource="money.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="Види податків" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="28,96,0,0" Height="54" Click="ShowAllTaxes" BorderBrush="#FF898989" Background="#FF232323" Foreground="White" />
+        <Button x:Name="button1" Content="Фізичні особи" HorizontalAlignment="Left" Height="54" Margin="158,96,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllNaturalPersons" BorderBrush="#FF898989" Background="#FF232323" Foreground="White" />
+        <Button x:Name="button2" Content="Юридичні особи" HorizontalAlignment="Left" Height="54" Margin="288,96,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllJuridicalPersons" BorderBrush="#FF898989" Background="#FF232323" Foreground="White" />
+        <Button x:Name="button3" Content="Податки сплачені&#xa;юридичними особами" HorizontalAlignment="Left" Height="54" Margin="445,96,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByJuridicalPersons" BorderBrush="#FF898989" Background="#FF232323" Foreground="White" />
+        <Button x:Name="button4" Content="Податки сплачені&#xA;фізичними особами" HorizontalAlignment="Left" Height="54" Margin="605,96,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByNaturalPersons" BorderBrush="#FF898989" Background="#FF232323" Foreground="White" />
     </Grid>
 </Window>

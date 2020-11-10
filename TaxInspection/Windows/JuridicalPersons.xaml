@@ -13,7 +13,7 @@
                 <GradientStop Color="#FF878787" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ListView x:Name="ListOfJuridicalPersons" HorizontalAlignment="Left" Height="302" Margin="67,32,0,0" VerticalAlignment="Top" Width="657" BorderBrush="White">
+        <ListView x:Name="ListOfJuridicalPersons" HorizontalAlignment="Left" Height="302" Margin="67,32,0,0" VerticalAlignment="Top" Width="657" BorderBrush="White" Foreground="Black">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Назва" Width="210" DisplayMemberBinding="{Binding Name}" />
