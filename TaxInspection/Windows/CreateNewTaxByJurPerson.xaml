@@ -8,14 +8,27 @@
         mc:Ignorable="d"
         Title="CreateNewTaxByJurPerson" Height="450" Width="800">
     <Grid>
-        <Label x:Name="TaxName" Content="Назва податку" HorizontalAlignment="Left" Height="35" Margin="43,43,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
-        <Label x:Name="PayerName" Content="Назва платника" HorizontalAlignment="Left" Height="35" Margin="43,117,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
-        <Label x:Name="label" Content="Дата оплати" HorizontalAlignment="Left" Height="35" Margin="43,193,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
-        <DatePicker x:Name="PayDate" HorizontalAlignment="Left" Height="41" Margin="222,187,0,0" VerticalAlignment="Top" Width="165"/>
-        <uc:AutoCompleteTextBoxUserControl x:Name="TaxNamesBox" Margin="211,43,354,323"/>
-        <uc:AutoCompleteTextBoxUserControl x:Name="PayersNamesBox" Margin="211,117,354,249"/>
-        <Button x:Name="button" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="329,338,0,0" VerticalAlignment="Top" Width="153" Click="button_Click"/>
-        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="35" Margin="548,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Background="#FFF1F1F1"  />
-        <Label x:Name="label1" Content="Розмір оплати" HorizontalAlignment="Left" Height="36" Margin="447,51,0,0" VerticalAlignment="Top" Width="96"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDEDEDE" Offset="0"/>
+                <GradientStop Color="#FF959595" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="TaxName" Content="Назва податку" HorizontalAlignment="Left" Height="35" Margin="223,62,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
+        <Label x:Name="PayerName" Content="Назва платника" HorizontalAlignment="Left" Height="35" Margin="223,117,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
+        <Label x:Name="label" Content="Дата оплати" HorizontalAlignment="Left" Height="35" Margin="223,186,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
+        <DatePicker x:Name="PayDate" HorizontalAlignment="Left" Height="41" Margin="391,180,0,0" VerticalAlignment="Top" Width="176" Background="White"/>
+        <uc:AutoCompleteTextBoxUserControl x:Name="TaxNamesBox" Margin="391,53,225,313"/>
+        <uc:AutoCompleteTextBoxUserControl x:Name="PayersNamesBox" Margin="391,111,225,255">
+            <uc:AutoCompleteTextBoxUserControl.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </uc:AutoCompleteTextBoxUserControl.OpacityMask>
+        </uc:AutoCompleteTextBoxUserControl>
+        <Button x:Name="button" Content="Додати новий запис" HorizontalAlignment="Left" Height="59" Margin="301,306,0,0" VerticalAlignment="Top" Width="187" Click="button_Click"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="35" Margin="391,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Background="#FFF1F1F1"  />
+        <Label x:Name="label1" Content="Розмір оплати" HorizontalAlignment="Left" Height="36" Margin="223,242,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
     </Grid>
 </Window>

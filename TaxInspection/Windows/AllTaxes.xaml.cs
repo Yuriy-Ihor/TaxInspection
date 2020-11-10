@@ -23,7 +23,7 @@ namespace TaxInspection.Windows
 
             if (item != null)
             {
-                if (checkIfTaxIsBusy(item))
+                if (checkIfTaxIsUsed(item))
                 {
                     MessageBox.Show("Податок вже існує в базі!");
                     return;
@@ -35,7 +35,7 @@ namespace TaxInspection.Windows
             }
         }
 
-        private bool checkIfTaxIsBusy(Tax tax)
+        private bool checkIfTaxIsUsed(Tax tax)
         {
             for(int i = 0; i < ((App)Application.Current).TaxesPayedByNatPersons.Count; i++)
             {

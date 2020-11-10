@@ -23,7 +23,7 @@ namespace TaxInspection.Windows
 
             int code = 0;
 
-            if(Date.SelectedDate.Value > DateTime.Today)
+            if(Date.SelectedDate == null || Date.SelectedDate.Value > DateTime.Today)
             {
                 MessageBox.Show("Помилка! Неприпустима дата!");
                 return;
@@ -57,8 +57,6 @@ namespace TaxInspection.Windows
 
             ((App)Application.Current).JuridicalPersons.Add(newPerson);
             sqlite_conn.Close();
-
-            MessageBox.Show("Успішно додана нова юридична особа: " + newPerson.Name);
         }
 
         private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");

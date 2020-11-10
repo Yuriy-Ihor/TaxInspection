@@ -139,7 +139,7 @@ namespace TaxInspection
             }
 
             if (((App)Application.Current).NaturalPersons.Count > 0)
-                JuridicalPerson.MaxId = ((App)Application.Current).NaturalPersons[((App)Application.Current).NaturalPersons.Count - 1].Id + 1;
+                NaturalPerson.MaxId = ((App)Application.Current).NaturalPersons[((App)Application.Current).NaturalPersons.Count - 1].Id + 1;
         }
 
         private void readAllJuridicalPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)

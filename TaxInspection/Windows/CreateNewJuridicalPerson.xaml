@@ -6,14 +6,20 @@
         xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
         xmlns:local="clr-namespace:TaxInspection.Windows"
         mc:Ignorable="d"
-        Title="CreateNewJuridicalPerson" Height="450" Width="800">
+        Title="CreateNewJuridicalPerson" Height="380" Width="700">
     <Grid>
-        <Label x:Name="Name_label" Content="Назва" HorizontalAlignment="Left" Height="42" Margin="90,68,0,0" VerticalAlignment="Top" Width="77" FontSize="18"/>
-        <Label x:Name="DateOfRegistration_label" Content="Дата реєстрації" HorizontalAlignment="Left" Height="42" Margin="55,137,0,0" VerticalAlignment="Top" Width="150" FontSize="18"/>
-        <Label x:Name="Code_label" Content="Код ЄДРПОУ" HorizontalAlignment="Left" Height="42" Margin="55,211,0,0" VerticalAlignment="Top" Width="150" FontSize="18"/>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="42" Margin="314,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" />
-        <TextBox x:Name="Code" MaxLength="8"  PreviewTextInput="CheckCodeInput"  HorizontalAlignment="Left" Height="42" Margin="314,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" />
-        <Button x:Name="AddNewPersonButton" Content="Додати нову юридичну особу" HorizontalAlignment="Left" Height="54" Margin="314,323,0,0" VerticalAlignment="Top" Width="178" Click="AddNewPerson"/>
-        <DatePicker x:Name="Date" HorizontalAlignment="Left" Height="42" Margin="314,137,0,0" VerticalAlignment="Top" Width="262"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                <GradientStop Color="#FFAEAEAE" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="Name_label" Content="Назва" HorizontalAlignment="Left" Height="42" Margin="92,44,0,0" VerticalAlignment="Top" Width="78" FontSize="18"/>
+        <Label x:Name="DateOfRegistration_label" Content="Дата реєстрації" HorizontalAlignment="Left" Height="42" Margin="92,112,0,0" VerticalAlignment="Top" Width="150" FontSize="18"/>
+        <Label x:Name="Code_label" Content="Код ЄДРПОУ" HorizontalAlignment="Left" Height="42" Margin="92,186,0,0" VerticalAlignment="Top" Width="150" FontSize="18"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="42" Margin="284,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" />
+        <TextBox x:Name="Code" MaxLength="8"  PreviewTextInput="CheckCodeInput"  HorizontalAlignment="Left" Height="42" Margin="284,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" />
+        <Button x:Name="AddNewPersonButton" Content="Додати нову юридичну особу" HorizontalAlignment="Left" Height="54" Margin="284,270,0,0" VerticalAlignment="Top" Width="178" Click="AddNewPerson"/>
+        <DatePicker x:Name="Date" HorizontalAlignment="Left" Height="42" Margin="284,112,0,0" VerticalAlignment="Top" Width="262"/>
     </Grid>
 </Window>

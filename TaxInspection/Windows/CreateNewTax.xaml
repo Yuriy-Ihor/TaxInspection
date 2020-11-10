@@ -7,11 +7,17 @@
         mc:Ignorable="d"
         Title="Створити новий податок" Height="330.613" Width="513.01">
     <Grid Margin="0,0,0,8">
-        <Button x:Name="button" Content="Додати новий податок" HorizontalAlignment="Left" Height="44" Margin="180,235,0,0" VerticalAlignment="Top" Width="155" Click="button_Click"/>
-        <Label x:Name="label" Content="Назва податку" HorizontalAlignment="Left" Height="25" Margin="20,60,0,0" VerticalAlignment="Top" Width="94"/>
-        <Label x:Name="label_Copy" Content="Нормативний &#xD;&#xA;документ" HorizontalAlignment="Left" Height="47" Margin="20,119,0,0" VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="47" Margin="139,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
-        <TextBox x:Name="DocumentBox" HorizontalAlignment="Left" Height="47" Margin="139,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFC3C3C3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="button" Content="Додати новий податок" HorizontalAlignment="Left" Height="44" Margin="180,235,0,0" VerticalAlignment="Top" Width="155" Click="button_Click" FontSize="14"/>
+        <Label x:Name="label" Content="Назва податку" HorizontalAlignment="Left" Height="25" Margin="61,67,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="label_Copy" Content="Нормативний &#xD;&#xA;документ" HorizontalAlignment="Left" Height="47" Margin="61,126,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="47" Margin="180,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
+        <TextBox x:Name="DocumentBox" HorizontalAlignment="Left" Height="47" Margin="180,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
 
     </Grid>
 </Window>

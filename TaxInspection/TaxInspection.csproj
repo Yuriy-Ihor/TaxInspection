@@ -62,6 +62,7 @@
     <Compile Include="Extensions\AutoCompleteTextBoxUserControl.xaml.cs">
       <DependentUpon>AutoCompleteTextBoxUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\DataGenerator.cs" />
     <Compile Include="Extensions\Tools.cs" />
     <Compile Include="Windows\AllTaxes.xaml.cs">
       <DependentUpon>AllTaxes.xaml</DependentUpon>
@@ -189,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="templar3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="money_white_square.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

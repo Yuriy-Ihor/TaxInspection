@@ -12,9 +12,9 @@ DEBUG;TRACE
 C:\Users\1\Desktop\політех\5 семестр\Інтеграція Інф Систем\TaxInspection\TaxInspection\App.xaml
 121390123249
 
-231849450810
+23-369390815
 14907775565
 Extensions\AutoCompleteTextBoxUserControl.xaml;MainWindow.xaml;Windows\AllTaxes.xaml;Windows\CreateNewJuridicalPerson.xaml;Windows\CreateNewNaturalPerson.xaml;Windows\CreateNewTax.xaml;Windows\CreateNewTaxByJurPerson.xaml;Windows\CreateNewTaxByNatPerson.xaml;Windows\JuridicalPersons.xaml;Windows\NaturalPersons.xaml;Windows\TaxesPayedByJurPersons.xaml;Windows\TaxesPayedByNatPersons.xaml;
 
-True
+False
 
