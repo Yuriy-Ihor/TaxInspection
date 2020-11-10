@@ -44,7 +44,7 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            if(int.Parse(Amount.Text) <= 0)
+            if(string.IsNullOrEmpty(Amount.Text) || int.Parse(Amount.Text) <= 0)
             {
                 MessageBox.Show("Неприпустимий розмір оплати податку!");
                 return;
