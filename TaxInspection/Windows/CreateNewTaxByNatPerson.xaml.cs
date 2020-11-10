@@ -1,8 +1,9 @@
 ﻿using System;
-using TaxInspection.Database_elements;
-using System.Collections.Generic;
 using System.Windows;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Finisar.SQLite;
+using TaxInspection.Database_elements;
 
 namespace TaxInspection.Windows
 {
@@ -28,7 +29,7 @@ namespace TaxInspection.Windows
 
         private void AddNewPerson(object sender, RoutedEventArgs e)
         {
-            Tax tax = new Tax();
+            Tax tax = null;
             foreach (var item in ((App)Application.Current).Taxes)
             {
                 if (item.TaxName == TaxNamesBox.autoTextBox.Text)
@@ -37,9 +38,21 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if (PayDate.SelectedDate.Value > DateTime.Today)
+            if(tax == null)
+            {
+                MessageBox.Show("Помилка! Податку з такою назвою не існує!");
+                return;
+            }
+
+            if (PayDate.SelectedDate == null || PayDate.SelectedDate.Value > DateTime.Today)
             {
                 MessageBox.Show("Помилка! Неприпустима дата!");
+                return;
+            }
+
+            if (int.Parse(Amount.Text) <= 0)
+            {
+                MessageBox.Show("Неприпустимий розмір оплати податку!");
                 return;
             }
 
@@ -82,6 +95,17 @@ namespace TaxInspection.Windows
             sqlite_cmd.ExecuteNonQuery();
 
             sqlite_conn.Close();
+        }
+
+        private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");
+        private bool isTextAllowed(string text)
+        {
+            return !_registrationCodeRegex.IsMatch(text);
+        }
+
+        public void CheckAmountInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            e.Handled = !isTextAllowed(e.Text);
         }
     }
 }

@@ -21,7 +21,7 @@
         <uc:AutoCompleteTextBoxUserControl x:Name="TaxNamesBox" Margin="349,42,216,324"/>
         <uc:AutoCompleteTextBoxUserControl x:Name="PayersNamesBox" Margin="349,116,216,250"/>
         <Button x:Name="button" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="275,336,0,0" VerticalAlignment="Top" Width="153" Click="AddNewPerson" FontSize="14"/>
-        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="35" Margin="349,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Background="White"  />
+        <TextBox x:Name="Amount" PreviewTextInput="CheckAmountInput" HorizontalAlignment="Left" Height="35" Margin="349,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Background="White"  />
         <Label x:Name="label1" Content="Розмір оплати" HorizontalAlignment="Left" Height="36" Margin="181,260,0,0" VerticalAlignment="Top" Width="130" FontSize="16"/>
     </Grid>
 </Window>

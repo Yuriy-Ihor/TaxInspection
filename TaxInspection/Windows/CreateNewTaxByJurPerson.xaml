@@ -28,7 +28,7 @@
             </uc:AutoCompleteTextBoxUserControl.OpacityMask>
         </uc:AutoCompleteTextBoxUserControl>
         <Button x:Name="button" Content="Додати новий запис" HorizontalAlignment="Left" Height="59" Margin="301,306,0,0" VerticalAlignment="Top" Width="187" Click="button_Click"/>
-        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="35" Margin="391,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Background="#FFF1F1F1"  />
+        <TextBox x:Name="Amount" PreviewTextInput="CheckAmountInput" HorizontalAlignment="Left" Height="35" Margin="391,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Background="#FFF1F1F1"  />
         <Label x:Name="label1" Content="Розмір оплати" HorizontalAlignment="Left" Height="36" Margin="223,242,0,0" VerticalAlignment="Top" Width="144" FontSize="16"/>
     </Grid>
 </Window>
