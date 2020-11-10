@@ -37,3 +37,4 @@ C:\Users\1\Desktop\політех\5 семестр\Інтеграція Інф �
 C:\Users\1\Desktop\політех\5 семестр\Інтеграція Інф Систем\TaxInspection\TaxInspection\obj\Debug\Windows\TaxesPayedByNatPersons.g.cs
 C:\Users\1\Desktop\політех\5 семестр\Інтеграція Інф Систем\TaxInspection\TaxInspection\obj\Debug\Windows\CreateNewTaxByNatPerson.baml
 C:\Users\1\Desktop\політех\5 семестр\Інтеграція Інф Систем\TaxInspection\TaxInspection\obj\Debug\Windows\TaxesPayedByNatPersons.baml
+C:\Users\1\Desktop\політех\5 семестр\Інтеграція Інф Систем\TaxInspection\TaxInspection\obj\Debug\App.baml

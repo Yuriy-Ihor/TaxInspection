@@ -7,9 +7,6 @@ using TaxInspection.Database_elements;
 
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for CreateNewTaxByJurPerson.xaml
-    /// </summary>
     public partial class CreateNewTaxByJurPerson : Window
     {
         public CreateNewTaxByJurPerson()

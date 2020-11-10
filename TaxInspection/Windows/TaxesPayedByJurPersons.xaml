@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="TaxesPayedByJurPersons" Height="450" Width="750">
     <Grid>
-        <ListView x:Name="Taxes" HorizontalAlignment="Left" Height="323" Margin="60,30,0,0" VerticalAlignment="Top" Width="635">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFCFCDCD" Offset="0"/>
+                <GradientStop Color="#FF7E7E7E" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListView x:Name="Taxes" HorizontalAlignment="Left" Height="323" Margin="60,30,0,0" VerticalAlignment="Top" Width="635" Foreground="#FF383838">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Назва податку" Width="100" DisplayMemberBinding="{Binding TaxName}" />
@@ -17,8 +23,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="button" Content="Видалити вибраний&#xa;запис" HorizontalAlignment="Left" Height="42" Margin="393,367,0,0" VerticalAlignment="Top" Width="137" Click="RemoveSelectedTax" />
-        <Button x:Name="button1" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="194,367,0,0" VerticalAlignment="Top" Width="140" Click="button1_Click"/>
+        <Button x:Name="button" Content="Видалити вибраний&#xa;запис" HorizontalAlignment="Left" Height="42" Margin="393,367,0,0" VerticalAlignment="Top" Width="137" Click="RemoveSelectedTax" Background="#FFC74343" BorderBrush="#FF686868" Foreground="White" />
+        <Button x:Name="button1" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="194,367,0,0" VerticalAlignment="Top" Width="140" Click="button1_Click" Background="#FF6D9E56" Foreground="White"/>
 
     </Grid>
 </Window>

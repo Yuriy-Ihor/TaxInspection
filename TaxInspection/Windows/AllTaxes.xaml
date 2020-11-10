@@ -1,12 +1,18 @@
-﻿ <Window x:Class="TaxInspection.Windows.AllTaxes"
+﻿<Window x:Class="TaxInspection.Windows.AllTaxes"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="AllTaxes" Height="450" Width="600">
+        Title="AllTaxes" Height="420" Width="600">
     <Grid>
-        <ListView x:Name="ListOfTaxes" HorizontalAlignment="Left" SelectionMode="Single" Height="270" Margin="47,42,0,0" VerticalAlignment="Top" Width="507">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFB4B4B4" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListView x:Name="ListOfTaxes" HorizontalAlignment="Left" SelectionMode="Single" Height="270" Margin="47,42,0,0" VerticalAlignment="Top" Width="507" Foreground="Black" Background="#FFE0E0E0" BorderBrush="White" Cursor="">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Назва податку" Width="200" DisplayMemberBinding="{Binding TaxName}" />
@@ -21,7 +27,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="CreateNewTaxButton" Content="Створити новий податок" HorizontalAlignment="Left" Height="44" Margin="231,356,0,0" VerticalAlignment="Top" Width="150" Click="AddNewTax"/>
-        <Button x:Name="RemoveSelectedTaxButton" Content="Видалити вибраний &#xD;&#xA;податок" HorizontalAlignment="Left" Height="44" Margin="399,356,0,0" VerticalAlignment="Top" Width="150" Click="RemoveSelectedTax"/>
+        <Button x:Name="CreateNewTaxButton" Content="Додати новий податок" HorizontalAlignment="Left" Height="44" Margin="108,329,0,0" VerticalAlignment="Top" Width="150" Click="AddNewTax" Background="#FF6D9E56" BorderBrush="#FF838D45" Foreground="White" FontFamily="Verdana"/>
+        <Button x:Name="RemoveSelectedTaxButton" Content="Видалити вибраний &#xD;&#xA;податок" HorizontalAlignment="Left" Height="44" Margin="327,329,0,0" VerticalAlignment="Top" Width="150" Click="RemoveSelectedTax" Background="#FFC74343" BorderBrush="#FFB9B9B9" FontFamily="Verdana" Foreground="White"/>
     </Grid>
 </Window>

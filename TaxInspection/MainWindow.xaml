@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TaxInspection"
+        xmlns:local="clr-namespace:TaxInspection" 
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -12,6 +12,5 @@
         <Button x:Name="button2" Content="Юридичні особи" HorizontalAlignment="Left" Height="54" Margin="449,130,0,0" VerticalAlignment="Top" Width="125" Click="ShowAllJuridicalPersons" />
         <Button x:Name="button3" Content="Податки сплачені&#xa;юридичними особами" HorizontalAlignment="Left" Height="45" Margin="211,210,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByJuridicalPersons" />
         <Button x:Name="button4" Content="Податки сплачені&#xA;фізичними особами" HorizontalAlignment="Left" Height="45" Margin="388,210,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.5,0.5" Click="ShowAllTaxesPayedByNaturalPersons" />
-
     </Grid>
 </Window>

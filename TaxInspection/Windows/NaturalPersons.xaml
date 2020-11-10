@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="NaturalPersons" Height="450" Width="700">
     <Grid>
-        <ListView x:Name="ListOfNaturalPersons" SelectionMode="Single" HorizontalAlignment="Left" Height="334" Margin="50,24,0,0" VerticalAlignment="Top" Width="575">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD4D4D4" Offset="0"/>
+                <GradientStop Color="#FF8B8A8A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListView x:Name="ListOfNaturalPersons" SelectionMode="Single" HorizontalAlignment="Left" Height="334" Margin="50,24,0,0" VerticalAlignment="Top" Width="575" Foreground="#FF0C0C0C" BorderBrush="White">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Ім'я" Width="120" DisplayMemberBinding="{Binding Name}" />
@@ -17,7 +23,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="button" Content="Додати нову фізичну особу" HorizontalAlignment="Left" Height="46" Margin="157,363,0,0" VerticalAlignment="Top" Width="193" Click="ShowCreateNewPersonWindow"/>
-        <Button x:Name="button_Copy" Content="Видалити вибрану фізичну особу" HorizontalAlignment="Left" Height="46" Margin="387,363,0,0" VerticalAlignment="Top" Width="193" Click="RemoveSelectedPerson"/>
+        <Button x:Name="button" Content="Додати нову фізичну особу" HorizontalAlignment="Left" Height="46" Margin="116,363,0,0" VerticalAlignment="Top" Width="193" Click="ShowCreateNewPersonWindow" Background="#FF6D9E56" Foreground="White"/>
+        <Button x:Name="button_Copy" Content="Видалити вибрану фізичну особу" HorizontalAlignment="Left" Height="46" Margin="359,363,0,0" VerticalAlignment="Top" Width="193" Click="RemoveSelectedPerson" Foreground="White" Background="#FFC74343"/>
     </Grid>
 </Window>
