@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TaxInspection.Windows"
         xmlns:uc="clr-namespace:WPFAutoCompleteTextBox.Views.UserControls"
         mc:Ignorable="d"
-        Title="CreateNewTaxByJurPerson" Height="450" Width="800">
+        Title="Додати новий податок юридичної особи" Height="450" Width="800">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

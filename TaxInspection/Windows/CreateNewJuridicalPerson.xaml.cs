@@ -21,23 +21,17 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            int code = 0;
-
             if(Date.SelectedDate == null || Date.SelectedDate.Value > DateTime.Today)
             {
                 MessageBox.Show("Помилка! Неприпустима дата!");
                 return;
             }
 
-            if(!int.TryParse(Code.Text, out code))
-            {
-                MessageBox.Show("Помилка! Код ЄДРПОУ недопустимого значення!");
-                return;
-            }
+            int code = int.Parse(Code.Text);
 
-            if (code > 99999999)
+            if (checkIfCodeIsUsed(code))
             {
-                MessageBox.Show("Помилка! Код ЄДРПОУ недопустимого значення!");
+                MessageBox.Show("Помилка! У базі вже існує особа з таким Кодом ЄДРПОУ!");
                 return;
             }
 
@@ -57,6 +51,19 @@ namespace TaxInspection.Windows
 
             ((App)Application.Current).JuridicalPersons.Add(newPerson);
             sqlite_conn.Close();
+        }
+
+        private bool checkIfCodeIsUsed(int code)
+        {
+            for (int i = 0; i < ((App)Application.Current).JuridicalPersons.Count; i++)
+            {
+                var item = ((App)Application.Current).JuridicalPersons[i];
+
+                if (item.RegistrationCode == code)
+                    return true;
+            }
+
+            return false;
         }
 
         private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");

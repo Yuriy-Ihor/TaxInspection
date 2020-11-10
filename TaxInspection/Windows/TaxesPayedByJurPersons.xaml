@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaxInspection.Windows"
         mc:Ignorable="d"
-        Title="TaxesPayedByJurPersons" Height="450" Width="750">
+        Title="Податки оплачені юридичними особами" Height="450" Width="750">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -19,7 +19,7 @@
                     <GridViewColumn Header="Назва податку" Width="100" DisplayMemberBinding="{Binding TaxName}" />
                     <GridViewColumn Header="Назва платника" Width="100" DisplayMemberBinding="{Binding PayerName}" />
                     <GridViewColumn Header="Дата оплати" Width="200" DisplayMemberBinding="{Binding OnPayedDate}" />
-                    <GridViewColumn Header="Сума" Width="230" DisplayMemberBinding="{Binding Amount}" />
+                    <GridViewColumn Header="Розмір" Width="230" DisplayMemberBinding="{Binding Amount}" />
                 </GridView>
             </ListView.View>
         </ListView>

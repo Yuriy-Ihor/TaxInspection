@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using Finisar.SQLite;
 using TaxInspection.Database_elements;
 
 namespace TaxInspection.Windows

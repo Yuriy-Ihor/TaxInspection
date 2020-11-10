@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaxInspection.Windows"
         mc:Ignorable="d"
-        Title="TaxesPayedByNatPersons" Height="450" Width="740">
+        Title="Податки сплачені фізичними особами" Height="450" Width="740">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -20,11 +20,11 @@
                     <GridViewColumn Header="Ім'я платника" Width="100" DisplayMemberBinding="{Binding PayerName}" />
                     <GridViewColumn Header="Прізвище платника" Width="150" DisplayMemberBinding="{Binding PayerSurname}" />
                     <GridViewColumn Header="Дата оплати" Width="120" DisplayMemberBinding="{Binding OnPayedDate}" />
-                    <GridViewColumn Header="Сума" Width="130" DisplayMemberBinding="{Binding Amount}" />
+                    <GridViewColumn Header="Розмір" Width="130" DisplayMemberBinding="{Binding Amount}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="button" Content="Видалити вибраний&#xa;запис" HorizontalAlignment="Left" Height="42" Margin="395,367,0,0" VerticalAlignment="Top" Width="137" Click="RemoveSelectedTax" Background="#FFC74343" Foreground="White" />
-        <Button x:Name="button1" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="193,367,0,0" VerticalAlignment="Top" Width="140" Click="OpenAddNewNatPersonWindow" Background="#FF6D9E56" Foreground="White"/>
+        <Button x:Name="button" Content="Видалити вибраний&#xa;запис" HorizontalAlignment="Left" Height="42" Margin="368,367,0,0" VerticalAlignment="Top" Width="137" Click="RemoveSelectedTax" Background="#FFC74343" Foreground="White" />
+        <Button x:Name="button1" Content="Додати новий запис" HorizontalAlignment="Left" Height="42" Margin="166,367,0,0" VerticalAlignment="Top" Width="140" Click="OpenAddNewNatPersonWindow" Background="#FF6D9E56" Foreground="White"/>
     </Grid>
 </Window>
