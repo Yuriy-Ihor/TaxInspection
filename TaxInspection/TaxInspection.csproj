@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Database elements\PayedTax.cs" />
     <Compile Include="Extensions\AutoCompleteTextBoxUserControl.xaml.cs">
       <DependentUpon>AutoCompleteTextBoxUserControl.xaml</DependentUpon>
     </Compile>
@@ -195,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="Tests\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="money_white_square.png" />
