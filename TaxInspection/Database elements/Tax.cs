@@ -19,7 +19,7 @@ namespace TaxInspection.Database_elements
             {
                 _isValid = value;
 
-                if(MainWindow.DataLoaded)
+                if(SQLDataLoader.DataLoaded)
                 {
                     Extensions.Tools.ExecuteQuery("UPDATE Taxes SET IsValid = " + (_isValid ? 1 : 0) + " WHERE Id = " + TaxId);
                 }

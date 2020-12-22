@@ -27,7 +27,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="CreateNewTaxButton" Content="Додати новий податок" HorizontalAlignment="Left" Height="44" Margin="108,329,0,0" VerticalAlignment="Top" Width="150" Click="AddNewTax" Background="#FF6D9E56" BorderBrush="#FF838D45" Foreground="White" FontFamily="Verdana"/>
-        <Button x:Name="RemoveSelectedTaxButton" Content="Видалити вибраний &#xD;&#xA;податок" HorizontalAlignment="Left" Height="44" Margin="327,329,0,0" VerticalAlignment="Top" Width="150" Click="RemoveSelectedTax" Background="#FFC74343" BorderBrush="#FFB9B9B9" FontFamily="Verdana" Foreground="White"/>
+        <Button x:Name="CreateNewTaxButton" Content="Додати новий податок" HorizontalAlignment="Left" Height="44" Margin="108,329,0,0" VerticalAlignment="Top" Width="150" Click="addNewTax" Background="#FF6D9E56" BorderBrush="#FF838D45" Foreground="White" FontFamily="Verdana"/>
+        <Button x:Name="RemoveSelectedTaxButton" Content="Видалити вибраний &#xD;&#xA;податок" HorizontalAlignment="Left" Height="44" Margin="327,329,0,0" VerticalAlignment="Top" Width="150" Click="removeSelectedTax" Background="#FFC74343" BorderBrush="#FFB9B9B9" FontFamily="Verdana" Foreground="White"/>
     </Grid>
 </Window>

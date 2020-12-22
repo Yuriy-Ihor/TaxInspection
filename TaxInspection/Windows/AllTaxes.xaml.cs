@@ -11,13 +11,13 @@ namespace TaxInspection.Windows
             ListOfTaxes.ItemsSource = ((App)Application.Current).Taxes;
         }
 
-        private void AddNewTax(object sender, RoutedEventArgs e)
+        private void addNewTax(object sender, RoutedEventArgs e)
         {
             var newTax = new CreateNewTax();
             newTax.Show();
         }
 
-        private void RemoveSelectedTax(object parameter, RoutedEventArgs e)
+        private void removeSelectedTax(object parameter, RoutedEventArgs e)
         {
             var item = ListOfTaxes.SelectedItem as Tax;
 

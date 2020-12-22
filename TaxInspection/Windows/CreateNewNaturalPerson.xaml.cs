@@ -20,7 +20,7 @@ namespace TaxInspection.Windows
             if (!checkUserInputs())
                 return;
 
-            SQLiteConnection sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
+            SQLiteConnection sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
 
             SQLiteCommand sqlite_cmd;
             sqlite_conn.Open();

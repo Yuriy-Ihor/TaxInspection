@@ -12,12 +12,16 @@ namespace TaxInspection.Windows
         public CreateNewTaxByJurPerson()
         {
             InitializeComponent();
-            
-            for(int i = 0; i < ((App)Application.Current).Taxes.Count; i++)
+
+            for (int i = 0; i < ((App)Application.Current).Taxes.Count; i++)
+            {
                 TaxesNames.Add(((App)Application.Current).Taxes[i].TaxName);
+            }
 
             for (int i = 0; i < ((App)Application.Current).JuridicalPersons.Count; i++)
+            {
                 PayersNames.Add(((App)Application.Current).JuridicalPersons[i].Name);
+            }
 
             this.TaxNamesBox.AutoSuggestionList = TaxesNames;
             this.PayersNamesBox.AutoSuggestionList = PayersNames;
@@ -38,27 +42,8 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if (PayDate.SelectedDate == null || PayDate.SelectedDate.Value > DateTime.Today)
+            if(!checkIfTaxIsValid(tax))
             {
-                MessageBox.Show("Помилка! Неприпустима дата!");
-                return;
-            }
-
-            if(string.IsNullOrEmpty(Amount.Text) || int.Parse(Amount.Text) <= 0)
-            {
-                MessageBox.Show("Неприпустимий розмір оплати податку!");
-                return;
-            }
-
-            if (tax == null)
-            {
-                MessageBox.Show("Податку з такою назвою не існує!");
-                return;
-            }
-
-            if (!tax.IsValid)
-            {
-                MessageBox.Show("Цей податок вже не є чинним!");
                 return;
             }
 
@@ -77,7 +62,7 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            SQLiteConnection sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
+            SQLiteConnection sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
 
             SQLiteCommand sqlite_cmd;
             sqlite_conn.Open();
@@ -93,6 +78,35 @@ namespace TaxInspection.Windows
             sqlite_cmd.ExecuteNonQuery();
 
             sqlite_conn.Close();
+        }
+
+        private bool checkIfTaxIsValid(Tax tax)
+        {
+            if (PayDate.SelectedDate == null || PayDate.SelectedDate.Value > DateTime.Today)
+            {
+                MessageBox.Show("Помилка! Неприпустима дата!");
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(Amount.Text) || int.Parse(Amount.Text) <= 0)
+            {
+                MessageBox.Show("Неприпустимий розмір оплати податку!");
+                return false;
+            }
+
+            if (tax == null)
+            {
+                MessageBox.Show("Податку з такою назвою не існує!");
+                return false;
+            }
+
+            if (!tax.IsValid)
+            {
+                MessageBox.Show("Цей податок вже не є чинним!");
+                return false;
+            }
+
+            return true;
         }
 
         private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");

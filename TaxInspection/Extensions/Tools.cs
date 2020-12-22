@@ -10,7 +10,7 @@ namespace TaxInspection.Extensions
             SQLiteConnection sqlite_conn;
             SQLiteCommand sqlite_cmd;
 
-            sqlite_conn = new SQLiteConnection(App.DatabaseConnection);
+            sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
             sqlite_conn.Open();
 
             sqlite_cmd = sqlite_conn.CreateCommand();
