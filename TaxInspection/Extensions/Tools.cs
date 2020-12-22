@@ -1,8 +1,10 @@
-﻿using System;
-using Finisar.SQLite;
-
+﻿
 namespace TaxInspection.Extensions
 {
+    using System;
+    using Finisar.SQLite;
+    using System.Text.RegularExpressions;
+
     public static class Tools
     {
         public static void ExecuteQuery(string query)
@@ -50,5 +52,10 @@ namespace TaxInspection.Extensions
 
         #endregion
 
+        private static readonly Regex _onlyNumbersRegex = new Regex("[^0-9]+");
+        public static bool TextContainsOnlyNumbers(string text)
+        {
+            return _onlyNumbersRegex.IsMatch(text);
+        }
     }
 }

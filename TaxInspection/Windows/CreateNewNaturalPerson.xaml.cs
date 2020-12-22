@@ -1,13 +1,14 @@
 ﻿
-using System.Linq;
-using System.Windows;
-using TaxInspection.Database_elements;
-using Finisar.SQLite;
-using System.Text.RegularExpressions;
-using System;
+
 
 namespace TaxInspection.Windows
 {
+    using System.Linq;
+    using System.Windows;
+    using TaxInspection.Database_elements;
+    using Finisar.SQLite;
+    using Extensions;
+
     public partial class CreateNewNaturalPerson : Window
     {
         public CreateNewNaturalPerson()
@@ -18,22 +19,17 @@ namespace TaxInspection.Windows
         private void CreateNewPerson(object sender, RoutedEventArgs e)
         {
             if (!checkUserInputs())
+            {
                 return;
-
-            SQLiteConnection sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
-
-            SQLiteCommand sqlite_cmd;
-            sqlite_conn.Open();
+            }
 
             NaturalPerson newPerson = new NaturalPerson(NaturalPerson.MaxId++, Name.Text, Surname.Text, long.Parse(IdentificationCode.Text), int.Parse(PassportCode.Text));
             
             string query = "INSERT INTO NaturalPersons (Id, Name, Surname, IdentificationCode, PassportCode) VALUES (" + newPerson.Id + ", '" + newPerson.Name + "', '" + newPerson.Surname + "', " + newPerson.IdentificationCode + ", '" + newPerson.PassportCode + "');";
 
-            sqlite_cmd = new SQLiteCommand(query, sqlite_conn);
-            sqlite_cmd.ExecuteNonQuery();
+            Tools.ExecuteQuery(query);
 
             ((App)Application.Current).NaturalPersons.Add(newPerson);
-            sqlite_conn.Close();
         }
 
         private bool checkUserInputs()
@@ -84,7 +80,9 @@ namespace TaxInspection.Windows
                 var item = ((App)Application.Current).NaturalPersons[i];
 
                 if (item.PassportCode == code)
+                {
                     return true;
+                }
             }
 
             return false;
@@ -97,26 +95,22 @@ namespace TaxInspection.Windows
                 var item = ((App)Application.Current).NaturalPersons[i];
 
                 if (item.IdentificationCode == code)
+                {
                     return true;
+                }
             }
 
             return false;
         }
 
-        private readonly Regex _onlyNumbersRegex = new Regex("[^0-9]+");
-        private bool isTextAllowed(string text)
-        {
-            return !_onlyNumbersRegex.IsMatch(text);
-        }
-
         public void CheckIdentificationCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
-            e.Handled = !isTextAllowed(e.Text);
+            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
         }
 
-        private void CheckPassportCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        public void CheckPassportCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
-            e.Handled = !isTextAllowed(e.Text);
+            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
         }
     }
 }

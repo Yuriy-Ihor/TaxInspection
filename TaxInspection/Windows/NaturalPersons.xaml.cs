@@ -1,8 +1,9 @@
-﻿using System.Windows;
-using TaxInspection.Database_elements;
-
+﻿
 namespace TaxInspection.Windows
 {
+    using System.Windows;
+    using TaxInspection.Database_elements;
+
     public partial class NaturalPersons : Window
     {
         public NaturalPersons()
@@ -36,7 +37,7 @@ namespace TaxInspection.Windows
 
         private bool checkIfPersonIsBusy(NaturalPerson person)
         {
-            for (int i = 0; i < ((App)Application.Current).NaturalPersons.Count; i++)
+            for (int i = 0; i < ((App)Application.Current).TaxesPayedByNatPersons.Count; i++)
             {
                 var item = ((App)Application.Current).TaxesPayedByNatPersons[i];
 
@@ -46,6 +47,5 @@ namespace TaxInspection.Windows
 
             return false;
         }
-
     }
 }

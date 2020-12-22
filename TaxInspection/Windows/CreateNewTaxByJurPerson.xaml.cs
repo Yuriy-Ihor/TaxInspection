@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using Finisar.SQLite;
-using System.Windows;
-using TaxInspection.Database_elements;
-
+﻿
 namespace TaxInspection.Windows
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Windows;
+    using TaxInspection.Database_elements;
+
     public partial class CreateNewTaxByJurPerson : Window
     {
         public CreateNewTaxByJurPerson()
@@ -62,22 +61,14 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            SQLiteConnection sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
-
-            SQLiteCommand sqlite_cmd;
-            sqlite_conn.Open();
-
             TaxPayedByJuridicalPerson newTax = new TaxPayedByJuridicalPerson(TaxPayedByJuridicalPerson.MaxId++, tax.TaxId, jurPerson.Id, tax.TaxName, jurPerson.Name, PayDate.SelectedDate.Value, int.Parse(Amount.Text));
 
             string date = Extensions.Tools.ConvertDayTimeToSqlDate(PayDate.SelectedDate.Value); 
             string query = "INSERT INTO TaxesPayedByJurPersons (Id, TaxId, PayerId, TaxName, PayerName, OnPayedDate, Amount) VALUES (" + newTax.Id + ", " + newTax.TaxId + ", " + newTax.PayerId + ", '" + newTax.TaxName + "', '" + newTax.PayerName + "', '" + date + "', " + newTax.Amount + ");";
 
+            Extensions.Tools.ExecuteQuery(query);
+
             ((App)Application.Current).TaxesPayedByJurPersons.Add(newTax);
-
-            sqlite_cmd = new SQLiteCommand(query, sqlite_conn);
-            sqlite_cmd.ExecuteNonQuery();
-
-            sqlite_conn.Close();
         }
 
         private bool checkIfTaxIsValid(Tax tax)
@@ -109,16 +100,9 @@ namespace TaxInspection.Windows
             return true;
         }
 
-        private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");
-        private bool isTextAllowed(string text)
-        {
-            return !_registrationCodeRegex.IsMatch(text);
-        }
-
         public void CheckAmountInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
-            e.Handled = !isTextAllowed(e.Text);
+            e.Handled = Extensions.Tools.TextContainsOnlyNumbers(e.Text);
         }
-
     }
 }
