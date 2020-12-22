@@ -10,18 +10,18 @@ namespace TaxInspection.Windows
     {
         public CreateNewJuridicalPerson()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         public void AddNewPerson(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrEmpty(Name.Text))
+            if (string.IsNullOrEmpty(Name.Text))
             {
                 MessageBox.Show("Неприпустиме значення імені!");
                 return;
             }
 
-            if(Date.SelectedDate == null || Date.SelectedDate.Value > DateTime.Today)
+            if (Date.SelectedDate == null || Date.SelectedDate.Value > DateTime.Today)
             {
                 MessageBox.Show("Помилка! Неприпустима дата!");
                 return;

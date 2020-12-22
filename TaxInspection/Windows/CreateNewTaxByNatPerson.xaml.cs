@@ -5,15 +5,13 @@ namespace TaxInspection.Windows
     using Extensions;
     using System.Windows;
     using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using Finisar.SQLite;
     using TaxInspection.Database_elements;
 
     public partial class CreateNewTaxByNatPerson : Window
     {
         public CreateNewTaxByNatPerson()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             for (int i = 0; i < ((App)Application.Current).Taxes.Count; i++)
                 TaxesNames.Add(((App)Application.Current).Taxes[i].TaxName);

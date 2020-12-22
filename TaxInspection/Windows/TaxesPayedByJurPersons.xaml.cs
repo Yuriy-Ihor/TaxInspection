@@ -7,7 +7,7 @@ namespace TaxInspection.Windows
     {
         public TaxesPayedByJurPersons()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             Taxes.ItemsSource = ((App)Application.Current).TaxesPayedByJurPersons;
         }
 

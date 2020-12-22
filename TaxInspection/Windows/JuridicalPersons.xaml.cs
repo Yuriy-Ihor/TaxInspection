@@ -1,18 +1,14 @@
 ﻿
-using System.Windows;
-using TaxInspection.Database_elements;
-using Finisar.SQLite;
-
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for JuridicalPersons.xaml
-    /// </summary>
+    using System.Windows;
+    using TaxInspection.Database_elements;
+
     public partial class JuridicalPersons : Window
     {
         public JuridicalPersons()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             ListOfJuridicalPersons.ItemsSource = ((App)Application.Current).JuridicalPersons;
         }
 
@@ -27,7 +23,7 @@ namespace TaxInspection.Windows
             var item = ListOfJuridicalPersons.SelectedItem as JuridicalPerson;
             if (item != null)
             {
-                if(checkIfPersonIsBusy(item))
+                if (checkIfPersonIsBusy(item))
                 {
                     MessageBox.Show("Дана юридична особа вже записана в базі сплачених податків!");
                     return;

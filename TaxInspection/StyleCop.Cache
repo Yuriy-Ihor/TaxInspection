@@ -121,542 +121,9 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="Resources.Designer.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.10.31 14:57:15.930</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="NaturalPerson.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.11.09 23:32:40.239</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
-        <context>The code must not contain blank lines at the start of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
-        <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
-        <line>4</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketsMustNotBePrecededByBlankLine" ruleCheckId="SA1508">
-        <context>A closing curly bracket must not be preceded by a blank line.</context>
-        <line>24</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The field must have a documentation header.</context>
-        <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FieldsMustBePrivate" ruleCheckId="SA1401">
-        <context>Fields must be declared with private access. Use properties to expose fields.</context>
-        <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>7</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>7</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
-        <context>All properties must be placed after all constructors.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
-        <context>All properties must be placed after all constructors.</context>
-        <line>15</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementMustNotBeOnSingleLine" ruleCheckId="SA1502">
-        <context>The constructor must not be placed on a single line. The opening and closing curly brackets must each be placed on their own line.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>15</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to Id must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>17</line>
-        <index>522</index>
-        <endIndex>523</endIndex>
-        <startLine>17</startLine>
-        <startColumn>13</startColumn>
-        <endLine>17</endLine>
-        <endColumn>14</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to Name must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>18</line>
-        <index>544</index>
-        <endIndex>547</endIndex>
-        <startLine>18</startLine>
-        <startColumn>13</startColumn>
-        <endLine>18</endLine>
-        <endColumn>16</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to Surname must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>19</line>
-        <index>570</index>
-        <endIndex>576</endIndex>
-        <startLine>19</startLine>
-        <startColumn>13</startColumn>
-        <endLine>19</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to IdentificationCode must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>20</line>
-        <index>602</index>
-        <endIndex>619</endIndex>
-        <startLine>20</startLine>
-        <startColumn>13</startColumn>
-        <endLine>20</endLine>
-        <endColumn>30</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to PassportCode must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>21</line>
-        <index>647</index>
-        <endIndex>658</endIndex>
-        <startLine>21</startLine>
-        <startColumn>13</startColumn>
-        <endLine>21</endLine>
-        <endColumn>24</endColumn>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
-  <sourcecode name="AutoCompleteTextBoxUserControl.xaml.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.11.11 00:54:41.279</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
-  <sourcecode name="Settings.Designer.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.10.31 14:57:15.936</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="JuridicalPersons.xaml.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.11.10 00:46:39.331</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
-        <context>The code must not contain blank lines at the start of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>2</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>3</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBeOrderedAlphabeticallyByNamespace" ruleCheckId="SA1210">
-        <context>Using directives must be sorted alphabetically by the namespaces.</context>
-        <line>3</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>4</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementDocumentationMustBeSpelledCorrectly" ruleCheckId="SA1650">
-        <context>The documentation text within the summary tag contains incorrectly spelled words: 'xaml'</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketsMustNotBePrecededByBlankLine" ruleCheckId="SA1508">
-        <context>A closing curly bracket must not be preceded by a blank line.</context>
-        <line>55</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'JuridicalPersons.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>15</line>
-        <index>335</index>
-        <endIndex>353</endIndex>
-        <startLine>15</startLine>
-        <startColumn>13</startColumn>
-        <endLine>15</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>19</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>25</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to checkIfPersonIsBusy must begin with the 'this.', 'base.', 'object.' or 'JuridicalPersons.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>30</line>
-        <index>879</index>
-        <endIndex>897</endIndex>
-        <startLine>30</startLine>
-        <startColumn>20</startColumn>
-        <endLine>30</endLine>
-        <endColumn>38</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
-        <context>The spacing around the keyword 'if' is invalid.</context>
-        <line>30</line>
-        <index>876</index>
-        <endIndex>877</endIndex>
-        <startLine>30</startLine>
-        <startColumn>17</startColumn>
-        <endLine>30</endLine>
-        <endColumn>18</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>42</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
-        <context>The body of the if statement must be wrapped in opening and closing curly brackets.</context>
-        <line>49</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
-        <context>method names begin with an upper-case letter: checkIfPersonIsBusy.</context>
-        <line>42</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
-  <sourcecode name="TaxesPayedByJurPersons.xaml.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.11.09 20:43:41.405</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>2</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
-        <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
-        <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'TaxesPayedByJurPersons.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>10</line>
-        <index>230</index>
-        <endIndex>248</endIndex>
-        <startLine>10</startLine>
-        <startColumn>13</startColumn>
-        <endLine>10</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>14</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>25</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
-        <context>method names begin with an upper-case letter: button1_Click.</context>
-        <line>25</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
-  <sourcecode name="TaxesPayedByNatPersons.xaml.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020.12.20 20:04:28.287</styleCop>
-      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.11.09 18:35:54.469</sourceFile>
-      <parser>2020.12.20 20:04:28.287</parser>
-      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>2</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
-        <context>All using directives must be placed inside of the namespace.</context>
-        <line>3</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementDocumentationMustBeSpelledCorrectly" ruleCheckId="SA1650">
-        <context>The documentation text within the summary tag contains incorrectly spelled words: 'Payed', 'xaml'</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>12</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'TaxesPayedByNatPersons.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>14</line>
-        <index>351</index>
-        <endIndex>369</endIndex>
-        <startLine>14</startLine>
-        <startColumn>13</startColumn>
-        <endLine>14</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>19</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>25</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
+  <project key="-768290013">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="PayedTax.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
@@ -766,11 +233,65 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="Person.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.12.23 00:51:29.543</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
+        <context>The code must not contain blank lines at the start of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The class must have a documentation header.</context>
+        <line>4</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>6</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>7</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>7</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
   <sourcecode name="Tools.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:43:28.356</sourceFile>
+      <sourceFile>2020.12.23 00:52:39.037</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -825,20 +346,9 @@
       </violation>
       <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
         <context>The line contains unnecessary parenthesis.</context>
-        <line>36</line>
-        <index>958</index>
-        <endIndex>1028</endIndex>
-        <startLine>36</startLine>
-        <startColumn>28</startColumn>
-        <endLine>36</endLine>
-        <endColumn>98</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
-        <context>The line contains unnecessary parenthesis.</context>
         <line>37</line>
-        <index>1057</index>
-        <endIndex>1121</endIndex>
+        <index>1055</index>
+        <endIndex>1119</endIndex>
         <startLine>37</startLine>
         <startColumn>26</startColumn>
         <endLine>37</endLine>
@@ -848,28 +358,6 @@
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
         <line>43</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
-        <context>The line contains unnecessary parenthesis.</context>
-        <line>45</line>
-        <index>1336</index>
-        <endIndex>1424</endIndex>
-        <startLine>45</startLine>
-        <startColumn>28</startColumn>
-        <endLine>45</endLine>
-        <endColumn>116</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
-        <context>The line contains unnecessary parenthesis.</context>
-        <line>46</line>
-        <index>1453</index>
-        <endIndex>1535</endIndex>
-        <startLine>46</startLine>
-        <startColumn>26</startColumn>
-        <endLine>46</endLine>
-        <endColumn>108</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
@@ -1128,11 +616,34 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="Resources.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.10.31 14:57:15.930</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
   <sourcecode name="SQLDataLoader.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.22 23:30:24.281</sourceFile>
+      <sourceFile>2020.12.23 00:58:33.412</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1190,61 +701,6 @@
         <line>14</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to readAllNaturalPersonsFromDatabase must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>24</line>
-        <index>701</index>
-        <endIndex>733</endIndex>
-        <startLine>24</startLine>
-        <startColumn>13</startColumn>
-        <endLine>24</endLine>
-        <endColumn>45</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to readAllJuridicalPersonsFromDatabase must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>27</line>
-        <index>841</index>
-        <endIndex>875</endIndex>
-        <startLine>27</startLine>
-        <startColumn>13</startColumn>
-        <endLine>27</endLine>
-        <endColumn>47</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to readAllTaxesFromDatabase must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>30</line>
-        <index>983</index>
-        <endIndex>1006</endIndex>
-        <startLine>30</startLine>
-        <startColumn>13</startColumn>
-        <endLine>30</endLine>
-        <endColumn>36</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to readAllTaxesPayedByNatPersonsFromDatabase must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>33</line>
-        <index>1114</index>
-        <endIndex>1154</endIndex>
-        <startLine>33</startLine>
-        <startColumn>13</startColumn>
-        <endLine>33</endLine>
-        <endColumn>53</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to readAllTaxesPayedByJurPersonsFromDatabase must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>36</line>
-        <index>1262</index>
-        <endIndex>1302</endIndex>
-        <startLine>36</startLine>
-        <startColumn>13</startColumn>
-        <endLine>36</endLine>
-        <endColumn>53</endColumn>
-        <warning>False</warning>
-      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
         <line>42</line>
@@ -1288,8 +744,8 @@
       <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
         <context>The line contains unnecessary parenthesis.</context>
         <line>102</line>
-        <index>4998</index>
-        <endIndex>5038</endIndex>
+        <index>5023</index>
+        <endIndex>5063</endIndex>
         <startLine>102</startLine>
         <startColumn>31</startColumn>
         <endLine>102</endLine>
@@ -1333,11 +789,228 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="App.xaml.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.12.23 00:49:19.644</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
+        <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
+        <line>7</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>9</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>10</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>10</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>11</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>11</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>12</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>12</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>13</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>13</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>15</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="JuridicalPerson.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.12.23 00:51:58.837</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
+        <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
+        <line>5</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The constructor must have a documentation header.</context>
+        <line>7</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>15</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>17</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="NaturalPerson.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.12.23 00:52:06.044</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
+        <context>The code must not contain blank lines at the start of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
+        <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
+        <line>4</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The constructor must have a documentation header.</context>
+        <line>6</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>15</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>17</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>19</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>19</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
   <sourcecode name="Tax.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.22 23:24:39.633</sourceFile>
+      <sourceFile>2020.12.23 00:53:15.684</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1367,12 +1040,12 @@
       </violation>
       <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtEndOfFile" ruleCheckId="SA1518">
         <context>The code must not contain blank lines at the end of the file.</context>
-        <line>45</line>
+        <line>44</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainMultipleBlankLinesInARow" ruleCheckId="SA1507">
         <context>The code must not contain multiple blank lines in a row.</context>
-        <line>45</line>
+        <line>44</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
@@ -1381,94 +1054,43 @@
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The field must have a documentation header.</context>
-        <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FieldsMustBePrivate" ruleCheckId="SA1401">
-        <context>Fields must be declared with private access. Use properties to expose fields.</context>
-        <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The property must have a documentation header.</context>
-        <line>7</line>
+        <line>6</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>7</line>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
+        <context>All properties must be placed after all constructors.</context>
+        <line>6</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
         <context>All properties must be placed after all fields.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
-        <context>All properties must be placed after all constructors.</context>
-        <line>29</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
-        <context>All properties must be placed after all constructors.</context>
-        <line>31</line>
+        <line>20</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
+        <context>The constructor must have a documentation header.</context>
         <line>8</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The property must have a documentation header.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The field must have a documentation header.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotBeginWithUnderscore" ruleCheckId="SA1309">
-        <context>Field names must not start with an underscore.</context>
-        <line>11</line>
+        <line>16</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The property must have a documentation header.</context>
-        <line>12</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>12</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
-        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
         <line>17</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to _isValid must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>16</line>
-        <index>396</index>
-        <endIndex>403</endIndex>
-        <startLine>16</startLine>
-        <startColumn>24</startColumn>
-        <endLine>16</endLine>
-        <endColumn>31</endColumn>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>17</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>18</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
@@ -1476,123 +1098,50 @@
         <line>18</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to _isValid must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The field must have a documentation header.</context>
         <line>20</line>
-        <index>470</index>
-        <endIndex>477</endIndex>
-        <startLine>20</startLine>
-        <startColumn>17</startColumn>
-        <endLine>20</endLine>
-        <endColumn>24</endColumn>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to _isValid must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>24</line>
-        <index>639</index>
-        <endIndex>646</endIndex>
-        <startLine>24</startLine>
-        <startColumn>84</startColumn>
-        <endLine>24</endLine>
-        <endColumn>91</endColumn>
+      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotBeginWithUnderscore" ruleCheckId="SA1309">
+        <context>Field names must not start with an underscore.</context>
+        <line>20</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to TaxId must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>24</line>
-        <index>676</index>
-        <endIndex>680</endIndex>
-        <startLine>24</startLine>
-        <startColumn>121</startColumn>
-        <endLine>24</endLine>
-        <endColumn>125</endColumn>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The property must have a documentation header.</context>
+        <line>21</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>21</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
+        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
+        <line>26</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>27</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'if' is invalid.</context>
-        <line>22</line>
-        <index>507</index>
-        <endIndex>508</endIndex>
-        <startLine>22</startLine>
+        <line>31</line>
+        <index>781</index>
+        <endIndex>782</endIndex>
+        <startLine>31</startLine>
         <startColumn>17</startColumn>
-        <endLine>22</endLine>
+        <endLine>31</endLine>
         <endColumn>18</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>29</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementMustNotBeOnSingleLine" ruleCheckId="SA1502">
-        <context>The constructor must not be placed on a single line. The opening and closing curly brackets must each be placed on their own line.</context>
-        <line>29</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>31</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
-        <context>The line contains unnecessary parenthesis.</context>
-        <line>35</line>
-        <index>927</index>
-        <endIndex>936</endIndex>
-        <startLine>35</startLine>
-        <startColumn>28</startColumn>
-        <endLine>35</endLine>
-        <endColumn>37</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to TaxId must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>33</line>
-        <index>858</index>
-        <endIndex>862</endIndex>
-        <startLine>33</startLine>
-        <startColumn>13</startColumn>
-        <endLine>33</endLine>
-        <endColumn>17</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to TaxName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>34</line>
-        <index>883</index>
-        <endIndex>889</endIndex>
-        <startLine>34</startLine>
-        <startColumn>13</startColumn>
-        <endLine>34</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to DocumentName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>35</line>
-        <index>912</index>
-        <endIndex>923</endIndex>
-        <startLine>35</startLine>
-        <startColumn>13</startColumn>
-        <endLine>35</endLine>
-        <endColumn>24</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to IsValid must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>36</line>
-        <index>952</index>
-        <endIndex>958</endIndex>
-        <startLine>36</startLine>
-        <startColumn>13</startColumn>
-        <endLine>36</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>39</line>
+        <line>38</line>
         <warning>False</warning>
       </violation>
     </violations>
@@ -1601,7 +1150,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.22 23:57:14.867</sourceFile>
+      <sourceFile>2020.12.23 00:45:52.380</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1639,90 +1188,13 @@
         <line>8</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to Id must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>10</line>
-        <index>298</index>
-        <endIndex>299</endIndex>
-        <startLine>10</startLine>
-        <startColumn>13</startColumn>
-        <endLine>10</endLine>
-        <endColumn>14</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to TaxId must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>11</line>
-        <index>320</index>
-        <endIndex>324</endIndex>
-        <startLine>11</startLine>
-        <startColumn>13</startColumn>
-        <endLine>11</endLine>
-        <endColumn>17</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to PayerId must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>12</line>
-        <index>346</index>
-        <endIndex>352</endIndex>
-        <startLine>12</startLine>
-        <startColumn>13</startColumn>
-        <endLine>12</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to TaxName must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>13</line>
-        <index>376</index>
-        <endIndex>382</endIndex>
-        <startLine>13</startLine>
-        <startColumn>13</startColumn>
-        <endLine>13</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to PayerName must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>14</line>
-        <index>408</index>
-        <endIndex>416</endIndex>
-        <startLine>14</startLine>
-        <startColumn>13</startColumn>
-        <endLine>14</endLine>
-        <endColumn>21</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to OnPayedDate must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>15</line>
-        <index>444</index>
-        <endIndex>454</endIndex>
-        <startLine>15</startLine>
-        <startColumn>13</startColumn>
-        <endLine>15</endLine>
-        <endColumn>23</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to Amount must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByJuridicalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>16</line>
-        <index>482</index>
-        <endIndex>487</endIndex>
-        <startLine>16</startLine>
-        <startColumn>13</startColumn>
-        <endLine>16</endLine>
-        <endColumn>18</endColumn>
-        <warning>False</warning>
-      </violation>
     </violations>
   </sourcecode>
   <sourcecode name="TaxPayedByNaturalPerson.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.22 23:57:19.946</sourceFile>
+      <sourceFile>2020.12.23 00:47:56.005</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1753,11 +1225,6 @@
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
         <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
         <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketsMustNotBePrecededByBlankLine" ruleCheckId="SA1508">
-        <context>A closing curly bracket must not be preceded by a blank line.</context>
-        <line>22</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
@@ -1775,92 +1242,33 @@
         <line>10</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to Id must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>12</line>
-        <index>367</index>
-        <endIndex>368</endIndex>
-        <startLine>12</startLine>
-        <startColumn>13</startColumn>
-        <endLine>12</endLine>
-        <endColumn>14</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to TaxId must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>13</line>
-        <index>389</index>
-        <endIndex>393</endIndex>
-        <startLine>13</startLine>
-        <startColumn>13</startColumn>
-        <endLine>13</endLine>
-        <endColumn>17</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to PayerId must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>14</line>
-        <index>415</index>
-        <endIndex>421</endIndex>
-        <startLine>14</startLine>
-        <startColumn>13</startColumn>
-        <endLine>14</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to TaxName must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>15</line>
-        <index>445</index>
-        <endIndex>451</endIndex>
-        <startLine>15</startLine>
-        <startColumn>13</startColumn>
-        <endLine>15</endLine>
-        <endColumn>19</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to PayerName must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>16</line>
-        <index>477</index>
-        <endIndex>485</endIndex>
-        <startLine>16</startLine>
-        <startColumn>13</startColumn>
-        <endLine>16</endLine>
-        <endColumn>21</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to PayerSurname must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>17</line>
-        <index>513</index>
-        <endIndex>524</endIndex>
-        <startLine>17</startLine>
-        <startColumn>13</startColumn>
-        <endLine>17</endLine>
-        <endColumn>24</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to OnPayedDate must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>18</line>
-        <index>555</index>
-        <endIndex>565</endIndex>
-        <startLine>18</startLine>
-        <startColumn>13</startColumn>
-        <endLine>18</endLine>
-        <endColumn>23</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to Amount must begin with the 'this.', 'base.', 'object.' or 'TaxPayedByNaturalPerson.' or 'PayedTax.' prefix to indicate the intended method call. </context>
-        <line>19</line>
-        <index>593</index>
-        <endIndex>598</endIndex>
-        <startLine>19</startLine>
-        <startColumn>13</startColumn>
-        <endLine>19</endLine>
-        <endColumn>18</endColumn>
+    </violations>
+  </sourcecode>
+  <sourcecode name="AutoCompleteTextBoxUserControl.xaml.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.11.11 00:54:41.279</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
         <warning>False</warning>
       </violation>
     </violations>
@@ -1960,11 +1368,34 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="Settings.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.10.31 14:57:15.936</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
   <sourcecode name="AllTaxes.xaml.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:05:14.650</sourceFile>
+      <sourceFile>2020.12.23 00:55:30.448</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2007,17 +1438,6 @@
         <line>10</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'AllTaxes.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>12</line>
-        <index>255</index>
-        <endIndex>273</endIndex>
-        <startLine>12</startLine>
-        <startColumn>13</startColumn>
-        <endLine>12</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
         <line>16</line>
@@ -2041,8 +1461,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfTaxIsUsed must begin with the 'this.', 'base.', 'object.' or 'AllTaxes.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>28</line>
-        <index>776</index>
-        <endIndex>791</endIndex>
+        <index>781</index>
+        <endIndex>796</endIndex>
         <startLine>28</startLine>
         <startColumn>55</startColumn>
         <endLine>28</endLine>
@@ -2052,8 +1472,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfTaxIsUsed must begin with the 'this.', 'base.', 'object.' or 'AllTaxes.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>29</line>
-        <index>908</index>
-        <endIndex>923</endIndex>
+        <index>913</index>
+        <endIndex>928</endIndex>
         <startLine>29</startLine>
         <startColumn>57</startColumn>
         <endLine>29</endLine>
@@ -2076,7 +1496,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:32:47.286</sourceFile>
+      <sourceFile>2020.12.23 00:55:54.430</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2119,17 +1539,6 @@
         <line>11</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'CreateNewJuridicalPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>13</line>
-        <index>286</index>
-        <endIndex>304</endIndex>
-        <startLine>13</startLine>
-        <startColumn>13</startColumn>
-        <endLine>13</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
         <line>16</line>
@@ -2138,34 +1547,12 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfCodeIsUsed must begin with the 'this.', 'base.', 'object.' or 'CreateNewJuridicalPerson.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>32</line>
-        <index>847</index>
-        <endIndex>863</endIndex>
+        <index>854</index>
+        <endIndex>870</endIndex>
         <startLine>32</startLine>
         <startColumn>17</startColumn>
         <endLine>32</endLine>
         <endColumn>33</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
-        <context>The spacing around the keyword 'if' is invalid.</context>
-        <line>18</line>
-        <index>414</index>
-        <endIndex>415</endIndex>
-        <startLine>18</startLine>
-        <startColumn>13</startColumn>
-        <endLine>18</endLine>
-        <endColumn>14</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
-        <context>The spacing around the keyword 'if' is invalid.</context>
-        <line>24</line>
-        <index>586</index>
-        <endIndex>587</endIndex>
-        <startLine>24</startLine>
-        <startColumn>13</startColumn>
-        <endLine>24</endLine>
-        <endColumn>14</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
@@ -2199,7 +1586,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:24:41.747</sourceFile>
+      <sourceFile>2020.12.23 00:57:12.564</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2242,118 +1629,103 @@
         <line>8</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBeOrderedAlphabeticallyByNamespace" ruleCheckId="SA1210">
-        <context>Using directives must be sorted alphabetically by the namespaces.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
         <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
-        <line>12</line>
+        <line>11</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The constructor must have a documentation header.</context>
-        <line>14</line>
+        <line>13</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'CreateNewNaturalPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>16</line>
-        <index>318</index>
-        <endIndex>336</endIndex>
-        <startLine>16</startLine>
+        <line>15</line>
+        <index>291</index>
+        <endIndex>309</endIndex>
+        <startLine>15</startLine>
         <startColumn>13</startColumn>
-        <endLine>16</endLine>
+        <endLine>15</endLine>
         <endColumn>31</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>19</line>
+        <line>18</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustBeOrderedByAccess" ruleCheckId="SA1202">
-        <context>All private methods must be placed after all public methods.</context>
-        <line>106</line>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>23</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustBeOrderedByAccess" ruleCheckId="SA1202">
-        <context>All private methods must be placed after all public methods.</context>
-        <line>111</line>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>28</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkUserInputs must begin with the 'this.', 'base.', 'object.' or 'CreateNewNaturalPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>21</line>
-        <index>455</index>
-        <endIndex>469</endIndex>
-        <startLine>21</startLine>
+        <line>30</line>
+        <index>826</index>
+        <endIndex>840</endIndex>
+        <startLine>30</startLine>
         <startColumn>18</startColumn>
-        <endLine>21</endLine>
+        <endLine>30</endLine>
         <endColumn>32</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>35</line>
+        <line>44</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
         <context>method names begin with an upper-case letter: checkUserInputs.</context>
-        <line>35</line>
+        <line>44</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfIdentificationCodeIsUsed must begin with the 'this.', 'base.', 'object.' or 'CreateNewNaturalPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>55</line>
-        <index>1827</index>
-        <endIndex>1857</endIndex>
-        <startLine>55</startLine>
+        <line>64</line>
+        <index>2198</index>
+        <endIndex>2228</endIndex>
+        <startLine>64</startLine>
         <startColumn>17</startColumn>
-        <endLine>55</endLine>
+        <endLine>64</endLine>
         <endColumn>47</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfPassportCodeIsUsed must begin with the 'this.', 'base.', 'object.' or 'CreateNewNaturalPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>61</line>
-        <index>2056</index>
-        <endIndex>2080</endIndex>
-        <startLine>61</startLine>
+        <line>70</line>
+        <index>2427</index>
+        <endIndex>2451</endIndex>
+        <startLine>70</startLine>
         <startColumn>17</startColumn>
-        <endLine>61</endLine>
+        <endLine>70</endLine>
         <endColumn>41</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>76</line>
+        <line>85</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
         <context>method names begin with an upper-case letter: checkIfPassportCodeIsUsed.</context>
-        <line>76</line>
+        <line>85</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>91</line>
+        <line>100</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
         <context>method names begin with an upper-case letter: checkIfIdentificationCodeIsUsed.</context>
-        <line>91</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>106</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The method must have a documentation header.</context>
-        <line>111</line>
+        <line>100</line>
         <warning>False</warning>
       </violation>
     </violations>
@@ -2362,7 +1734,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:33:23.723</sourceFile>
+      <sourceFile>2020.12.23 00:57:23.386</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2400,17 +1772,6 @@
         <line>9</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'CreateNewTax.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>11</line>
-        <index>220</index>
-        <endIndex>238</endIndex>
-        <startLine>11</startLine>
-        <startColumn>13</startColumn>
-        <endLine>11</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
         <line>14</line>
@@ -2427,7 +1788,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:40:42.493</sourceFile>
+      <sourceFile>2020.12.23 00:57:30.687</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2476,21 +1837,10 @@
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByJurPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>13</line>
-        <index>300</index>
-        <endIndex>318</endIndex>
-        <startLine>13</startLine>
-        <startColumn>13</startColumn>
-        <endLine>13</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to TaxesNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByJurPerson.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>17</line>
-        <index>435</index>
-        <endIndex>444</endIndex>
+        <index>440</index>
+        <endIndex>449</endIndex>
         <startLine>17</startLine>
         <startColumn>17</startColumn>
         <endLine>17</endLine>
@@ -2500,8 +1850,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to PayersNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByJurPerson.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>22</line>
-        <index>634</index>
-        <endIndex>644</endIndex>
+        <index>639</index>
+        <endIndex>649</endIndex>
         <startLine>22</startLine>
         <startColumn>17</startColumn>
         <endLine>22</endLine>
@@ -2511,8 +1861,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to TaxesNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByJurPerson.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>25</line>
-        <index>772</index>
-        <endIndex>781</endIndex>
+        <index>777</index>
+        <endIndex>786</endIndex>
         <startLine>25</startLine>
         <startColumn>51</startColumn>
         <endLine>25</endLine>
@@ -2522,8 +1872,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to PayersNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByJurPerson.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>26</line>
-        <index>838</index>
-        <endIndex>848</endIndex>
+        <index>843</index>
+        <endIndex>853</endIndex>
         <startLine>26</startLine>
         <startColumn>54</startColumn>
         <endLine>26</endLine>
@@ -2568,8 +1918,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfTaxIsValid must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByJurPerson.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>44</line>
-        <index>1367</index>
-        <endIndex>1383</endIndex>
+        <index>1372</index>
+        <endIndex>1388</endIndex>
         <startLine>44</startLine>
         <startColumn>17</startColumn>
         <endLine>44</endLine>
@@ -2579,8 +1929,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'foreach' is invalid.</context>
         <line>36</line>
-        <index>1127</index>
-        <endIndex>1133</endIndex>
+        <index>1132</index>
+        <endIndex>1138</endIndex>
         <startLine>36</startLine>
         <startColumn>13</startColumn>
         <endLine>36</endLine>
@@ -2590,8 +1940,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'if' is invalid.</context>
         <line>38</line>
-        <index>1213</index>
-        <endIndex>1214</endIndex>
+        <index>1218</index>
+        <endIndex>1219</endIndex>
         <startLine>38</startLine>
         <startColumn>17</startColumn>
         <endLine>38</endLine>
@@ -2601,8 +1951,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'if' is invalid.</context>
         <line>44</line>
-        <index>1363</index>
-        <endIndex>1364</endIndex>
+        <index>1368</index>
+        <endIndex>1369</endIndex>
         <startLine>44</startLine>
         <startColumn>13</startColumn>
         <endLine>44</endLine>
@@ -2630,7 +1980,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:42:40.963</sourceFile>
+      <sourceFile>2020.12.23 00:57:43.864</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2670,165 +2020,239 @@
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
         <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
-        <line>12</line>
+        <line>10</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The constructor must have a documentation header.</context>
-        <line>14</line>
+        <line>12</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
         <context>The body of the for statement must be wrapped in opening and closing curly brackets.</context>
-        <line>19</line>
+        <line>17</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
         <context>The body of the for statement must be wrapped in opening and closing curly brackets.</context>
-        <line>22</line>
+        <line>20</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketsMustNotBePrecededByBlankLine" ruleCheckId="SA1508">
         <context>A closing curly bracket must not be preceded by a blank line.</context>
-        <line>27</line>
+        <line>25</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
         <context>All constructors must be placed after all fields.</context>
-        <line>14</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByNatPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>16</line>
-        <index>393</index>
-        <endIndex>411</endIndex>
-        <startLine>16</startLine>
-        <startColumn>13</startColumn>
-        <endLine>16</endLine>
-        <endColumn>31</endColumn>
+        <line>12</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to TaxesNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByNatPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>19</line>
-        <index>513</index>
-        <endIndex>522</endIndex>
-        <startLine>19</startLine>
+        <line>17</line>
+        <index>448</index>
+        <endIndex>457</endIndex>
+        <startLine>17</startLine>
         <startColumn>17</startColumn>
-        <endLine>19</endLine>
+        <endLine>17</endLine>
         <endColumn>26</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to PayersNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByNatPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>22</line>
-        <index>680</index>
-        <endIndex>690</endIndex>
-        <startLine>22</startLine>
+        <line>20</line>
+        <index>615</index>
+        <endIndex>625</endIndex>
+        <startLine>20</startLine>
         <startColumn>17</startColumn>
-        <endLine>22</endLine>
+        <endLine>20</endLine>
         <endColumn>27</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to TaxesNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByNatPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>24</line>
-        <index>862</index>
-        <endIndex>871</endIndex>
-        <startLine>24</startLine>
+        <line>22</line>
+        <index>797</index>
+        <endIndex>806</endIndex>
+        <startLine>22</startLine>
         <startColumn>51</startColumn>
-        <endLine>24</endLine>
+        <endLine>22</endLine>
         <endColumn>60</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to PayersNames must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByNatPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>25</line>
-        <index>928</index>
-        <endIndex>938</endIndex>
-        <startLine>25</startLine>
+        <line>23</line>
+        <index>863</index>
+        <endIndex>873</endIndex>
+        <startLine>23</startLine>
         <startColumn>54</startColumn>
-        <endLine>25</endLine>
+        <endLine>23</endLine>
         <endColumn>64</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The field must have a documentation header.</context>
-        <line>29</line>
+        <line>27</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FieldsMustBePrivate" ruleCheckId="SA1401">
         <context>Fields must be declared with private access. Use properties to expose fields.</context>
-        <line>29</line>
+        <line>27</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The field must have a documentation header.</context>
-        <line>30</line>
+        <line>28</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FieldsMustBePrivate" ruleCheckId="SA1401">
         <context>Fields must be declared with private access. Use properties to expose fields.</context>
-        <line>30</line>
+        <line>28</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>32</line>
+        <line>30</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustBeOrderedByAccess" ruleCheckId="SA1202">
         <context>All private methods must be placed after all public methods.</context>
-        <line>104</line>
+        <line>102</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfTaxIsValid must begin with the 'this.', 'base.', 'object.' or 'CreateNewTaxByNatPerson.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>43</line>
-        <index>1447</index>
-        <endIndex>1463</endIndex>
-        <startLine>43</startLine>
+        <line>41</line>
+        <index>1382</index>
+        <endIndex>1398</endIndex>
+        <startLine>41</startLine>
         <startColumn>17</startColumn>
-        <endLine>43</endLine>
+        <endLine>41</endLine>
         <endColumn>33</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'if' is invalid.</context>
-        <line>43</line>
-        <index>1443</index>
-        <endIndex>1444</endIndex>
-        <startLine>43</startLine>
+        <line>41</line>
+        <index>1378</index>
+        <endIndex>1379</endIndex>
+        <startLine>41</startLine>
         <startColumn>13</startColumn>
-        <endLine>43</endLine>
+        <endLine>41</endLine>
         <endColumn>14</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'if' is invalid.</context>
-        <line>59</line>
-        <index>1935</index>
-        <endIndex>1936</endIndex>
-        <startLine>59</startLine>
+        <line>57</line>
+        <index>1870</index>
+        <endIndex>1871</endIndex>
+        <startLine>57</startLine>
         <startColumn>13</startColumn>
-        <endLine>59</endLine>
+        <endLine>57</endLine>
         <endColumn>14</endColumn>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>75</line>
+        <line>73</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
         <context>method names begin with an upper-case letter: checkIfTaxIsValid.</context>
-        <line>75</line>
+        <line>73</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>104</line>
+        <line>102</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="JuridicalPersons.xaml.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020.12.20 20:04:28.287</styleCop>
+      <settingsFile>2020.12.20 20:04:28.248</settingsFile>
+      <sourceFile>2020.12.23 00:57:49.520</sourceFile>
+      <parser>2020.12.20 20:04:28.287</parser>
+      <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020.12.20 20:04:28.287</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020.12.20 20:04:28.287</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020.12.20 20:04:28.287</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
+        <context>The code must not contain blank lines at the start of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
+        <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
+        <line>7</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketsMustNotBePrecededByBlankLine" ruleCheckId="SA1508">
+        <context>A closing curly bracket must not be preceded by a blank line.</context>
+        <line>51</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The constructor must have a documentation header.</context>
+        <line>9</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>15</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>21</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to checkIfPersonIsBusy must begin with the 'this.', 'base.', 'object.' or 'JuridicalPersons.' or 'Window.' prefix to indicate the intended method call. </context>
+        <line>26</line>
+        <index>778</index>
+        <endIndex>796</endIndex>
+        <startLine>26</startLine>
+        <startColumn>21</startColumn>
+        <endLine>26</endLine>
+        <endColumn>39</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>38</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
+        <context>The body of the if statement must be wrapped in opening and closing curly brackets.</context>
+        <line>45</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
+        <context>method names begin with an upper-case letter: checkIfPersonIsBusy.</context>
+        <line>38</line>
         <warning>False</warning>
       </violation>
     </violations>
@@ -2837,7 +2261,7 @@
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:29:33.187</sourceFile>
+      <sourceFile>2020.12.23 00:57:56.670</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2875,17 +2299,6 @@
         <line>9</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
-        <context>The call to InitializeComponent must begin with the 'this.', 'base.', 'object.' or 'NaturalPersons.' or 'Window.' prefix to indicate the intended method call. </context>
-        <line>11</line>
-        <index>224</index>
-        <endIndex>242</endIndex>
-        <startLine>11</startLine>
-        <startColumn>13</startColumn>
-        <endLine>11</endLine>
-        <endColumn>31</endColumn>
-        <warning>False</warning>
-      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
         <line>15</line>
@@ -2894,8 +2307,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to checkIfPersonIsBusy must begin with the 'this.', 'base.', 'object.' or 'NaturalPersons.' or 'Window.' prefix to indicate the intended method call. </context>
         <line>20</line>
-        <index>584</index>
-        <endIndex>602</endIndex>
+        <index>589</index>
+        <endIndex>607</endIndex>
         <startLine>20</startLine>
         <startColumn>20</startColumn>
         <endLine>20</endLine>
@@ -2905,8 +2318,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="KeywordsMustBeSpacedCorrectly" ruleCheckId="SA1000">
         <context>The spacing around the keyword 'if' is invalid.</context>
         <line>20</line>
-        <index>581</index>
-        <endIndex>582</endIndex>
+        <index>586</index>
+        <endIndex>587</endIndex>
         <startLine>20</startLine>
         <startColumn>17</startColumn>
         <endLine>20</endLine>
@@ -2935,14 +2348,11 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="-768290013">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
-  <sourcecode name="App.xaml.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="TaxesPayedByJurPersons.xaml.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:45:12.166</sourceFile>
+      <sourceFile>2020.12.23 00:58:03.688</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2965,73 +2375,48 @@
         <line>1</line>
         <warning>False</warning>
       </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>2</line>
+        <warning>False</warning>
+      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
         <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
-        <line>7</line>
+        <line>6</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>12</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>12</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>13</line>
+        <context>The constructor must have a documentation header.</context>
+        <line>8</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>15</line>
+        <line>14</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementMustNotBeOnSingleLine" ruleCheckId="SA1502">
-        <context>The method must not be placed on a single line. The opening and closing curly brackets must each be placed on their own line.</context>
-        <line>16</line>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>25</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
+        <context>method names begin with an upper-case letter: button1_Click.</context>
+        <line>25</line>
         <warning>False</warning>
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="JuridicalPerson.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="TaxesPayedByNatPersons.xaml.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020.12.20 20:04:28.287</styleCop>
       <settingsFile>2020.12.20 20:04:28.248</settingsFile>
-      <sourceFile>2020.12.23 00:45:06.660</sourceFile>
+      <sourceFile>2020.12.23 00:58:18.635</sourceFile>
       <parser>2020.12.20 20:04:28.287</parser>
       <StyleCop.CSharp.DocumentationRules>2020.12.20 20:04:28.287</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-297001298</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -3054,133 +2439,29 @@
         <line>1</line>
         <warning>False</warning>
       </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
+        <context>The code must not contain blank lines at the start of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="PartialElementsMustBeDocumented" ruleCheckId="SA1601">
         <context>The partial class element must have a documentation header containing either a summary tag or a content tag.</context>
-        <line>5</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The field must have a documentation header.</context>
-        <line>7</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FieldsMustBePrivate" ruleCheckId="SA1401">
-        <context>Fields must be declared with private access. Use properties to expose fields.</context>
         <line>7</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
-        <context>All properties must be placed after all constructors.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ElementsMustAppearInTheCorrectOrder" ruleCheckId="SA1201">
-        <context>All properties must be placed after all constructors.</context>
-        <line>14</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>9</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
+        <context>The constructor must have a documentation header.</context>
         <line>9</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>10</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The property must have a documentation header.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>11</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementMustNotBeOnSingleLine" ruleCheckId="SA1502">
-        <context>The constructor must not be placed on a single line. The opening and closing curly brackets must each be placed on their own line.</context>
-        <line>13</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The constructor must have a documentation header.</context>
-        <line>14</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>14</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to Id must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
+        <context>The method must have a documentation header.</context>
         <line>16</line>
-        <index>484</index>
-        <endIndex>485</endIndex>
-        <startLine>16</startLine>
-        <startColumn>13</startColumn>
-        <endLine>16</endLine>
-        <endColumn>14</endColumn>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to Name must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>17</line>
-        <index>506</index>
-        <endIndex>509</endIndex>
-        <startLine>17</startLine>
-        <startColumn>13</startColumn>
-        <endLine>17</endLine>
-        <endColumn>16</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to RegistrationDate must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>18</line>
-        <index>532</index>
-        <endIndex>547</endIndex>
-        <startLine>18</startLine>
-        <startColumn>13</startColumn>
-        <endLine>18</endLine>
-        <endColumn>28</endColumn>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
-        <context>The call to RegistrationCode must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
-        <line>19</line>
-        <index>573</index>
-        <endIndex>588</endIndex>
-        <startLine>19</startLine>
-        <startColumn>13</startColumn>
-        <endLine>19</endLine>
-        <endColumn>28</endColumn>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>22</line>
         <warning>False</warning>
       </violation>
     </violations>

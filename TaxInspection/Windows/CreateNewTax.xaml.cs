@@ -8,7 +8,7 @@ namespace TaxInspection.Windows
     {
         public CreateNewTax()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

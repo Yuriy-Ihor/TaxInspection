@@ -10,7 +10,7 @@ namespace TaxInspection.Windows
     {
         public CreateNewTaxByJurPerson()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             for (int i = 0; i < ((App)Application.Current).Taxes.Count; i++)
             {
@@ -24,7 +24,6 @@ namespace TaxInspection.Windows
 
             this.TaxNamesBox.AutoSuggestionList = TaxesNames;
             this.PayersNamesBox.AutoSuggestionList = PayersNames;
-            
         }
 
         public List<string> TaxesNames = new List<string>();

@@ -8,7 +8,7 @@ namespace TaxInspection.Windows
     {
         public NaturalPersons()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             ListOfNaturalPersons.ItemsSource = ((App)Application.Current).NaturalPersons;
         }
 

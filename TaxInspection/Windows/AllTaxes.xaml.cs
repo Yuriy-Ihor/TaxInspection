@@ -9,7 +9,7 @@ namespace TaxInspection.Windows
     {
         public AllTaxes()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             ListOfTaxes.ItemsSource = ((App)Application.Current).Taxes;
         }
 

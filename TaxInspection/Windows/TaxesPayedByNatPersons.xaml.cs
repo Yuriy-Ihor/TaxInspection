@@ -1,17 +1,14 @@
-﻿using System.Windows;
-using Finisar.SQLite;
-using TaxInspection.Database_elements;
-
+﻿
 namespace TaxInspection.Windows
 {
-    /// <summary>
-    /// Interaction logic for TaxesPayedByNatPersons.xaml
-    /// </summary>
+    using System.Windows;
+    using TaxInspection.Database_elements;
+
     public partial class TaxesPayedByNatPersons : Window
     {
         public TaxesPayedByNatPersons()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             Taxes.ItemsSource = ((App)Application.Current).TaxesPayedByNatPersons;
         }

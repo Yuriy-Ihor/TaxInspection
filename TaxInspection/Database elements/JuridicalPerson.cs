@@ -2,15 +2,8 @@
 {
     using System;
 
-    public partial class JuridicalPerson
+    public partial class JuridicalPerson : Person
     {
-        public static int MaxId = 0;
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime RegistrationDate { get; set; }
-        public int RegistrationCode { get; set; }
-
-        public JuridicalPerson() { }
         public JuridicalPerson(int id, string name, DateTime regDate, int code)
         {
             this.Id = id;
@@ -18,5 +11,10 @@
             this.RegistrationDate = regDate;
             this.RegistrationCode = code;
         }
+
+        public static int MaxId { get; set; } = 0;
+
+        public DateTime RegistrationDate { get; set; }
+        public int RegistrationCode { get; set; }
     }
 }

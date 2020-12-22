@@ -18,6 +18,5 @@ namespace TaxInspection.Database_elements
             this.OnPayedDate = payedDate;
             this.Amount = amount;
         }
-
     }
 }

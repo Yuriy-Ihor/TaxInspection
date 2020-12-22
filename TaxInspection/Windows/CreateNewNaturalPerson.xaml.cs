@@ -1,12 +1,9 @@
 ﻿
-
-
 namespace TaxInspection.Windows
 {
     using System.Linq;
     using System.Windows;
     using TaxInspection.Database_elements;
-    using Finisar.SQLite;
     using Extensions;
 
     public partial class CreateNewNaturalPerson : Window
@@ -14,6 +11,16 @@ namespace TaxInspection.Windows
         public CreateNewNaturalPerson()
         {
             InitializeComponent();
+        }
+
+        public void CheckIdentificationCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
+        }
+
+        public void CheckPassportCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
         }
 
         private void CreateNewPerson(object sender, RoutedEventArgs e)
@@ -101,16 +108,6 @@ namespace TaxInspection.Windows
             }
 
             return false;
-        }
-
-        public void CheckIdentificationCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
-        }
-
-        public void CheckPassportCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
         }
     }
 }

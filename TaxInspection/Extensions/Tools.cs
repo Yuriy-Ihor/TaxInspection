@@ -33,7 +33,7 @@ namespace TaxInspection.Extensions
 
         public static string ConvertDayTimeToSqlDate(DateTime date)
         {
-            string month = (date.Month < 10 ? '0' + date.Month.ToString() : date.Month.ToString());
+            string month = date.Month < 10 ? '0' + date.Month.ToString() : date.Month.ToString();
             string day = (date.Day < 10 ? '0' + date.Day.ToString() : date.Day.ToString());
             string rez = date.Year + "-" + month + "-" + day;
 
@@ -42,8 +42,8 @@ namespace TaxInspection.Extensions
 
         public static string ConvertDayTimeToSqlDate(DateTime? date)
         {
-            string month = (date.Value.Month < 10 ? '0' + date.Value.Month.ToString() : date.Value.Month.ToString());
-            string day = (date.Value.Day < 10 ? '0' + date.Value.Day.ToString() : date.Value.Day.ToString());
+            string month = date.Value.Month < 10 ? '0' + date.Value.Month.ToString() : date.Value.Month.ToString();
+            string day = date.Value.Day < 10 ? '0' + date.Value.Day.ToString() : date.Value.Day.ToString();
             string rez = date.Value.Year + "-" + month + "-" + day;
 
             return rez;

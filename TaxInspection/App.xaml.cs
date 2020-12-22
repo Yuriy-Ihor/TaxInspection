@@ -13,6 +13,7 @@
         public ObservableCollection<TaxPayedByJuridicalPerson> TaxesPayedByJurPersons { get; set; } = new ObservableCollection<TaxPayedByJuridicalPerson>();
 
         private void AppStartup(object sender, StartupEventArgs args) 
-        { }
+        { 
+        }
     }
 }

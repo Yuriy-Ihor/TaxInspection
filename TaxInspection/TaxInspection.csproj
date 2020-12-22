@@ -65,10 +65,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Database elements\PayedTax.cs" />
+    <Compile Include="Database elements\Person.cs" />
     <Compile Include="Extensions\AutoCompleteTextBoxUserControl.xaml.cs">
       <DependentUpon>AutoCompleteTextBoxUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Extensions\DataGenerator.cs" />
     <Compile Include="Extensions\Tools.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="SQLDataLoader.cs" />
