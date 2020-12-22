@@ -14,11 +14,11 @@ namespace TaxInspection.Database_elements
 
         public NaturalPerson(int id, string name, string surname, long identCode, int passportCode)
         {
-            Id = id;
-            Name = name;
-            Surname = surname;
-            IdentificationCode = identCode;
-            PassportCode = passportCode;
+            this.Id = id;
+            this.Name = name;
+            this.Surname = surname;
+            this.IdentificationCode = identCode;
+            this.PassportCode = passportCode;
         }
 
     }

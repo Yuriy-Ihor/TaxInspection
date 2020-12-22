@@ -1,5 +1,4 @@
-﻿
-namespace TaxInspection
+﻿namespace TaxInspection
 {
     using System.Collections.ObjectModel;
     using System.Windows;
@@ -14,8 +13,6 @@ namespace TaxInspection
         public ObservableCollection<TaxPayedByJuridicalPerson> TaxesPayedByJurPersons { get; set; } = new ObservableCollection<TaxPayedByJuridicalPerson>();
 
         private void AppStartup(object sender, StartupEventArgs args) 
-        {
-            
-        }
+        { }
     }
 }

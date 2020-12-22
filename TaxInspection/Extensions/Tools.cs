@@ -9,17 +9,24 @@ namespace TaxInspection.Extensions
     {
         public static void ExecuteQuery(string query)
         {
-            SQLiteConnection sqlite_conn;
-            SQLiteCommand sqlite_cmd;
+            try
+            {
+                SQLiteConnection sqlite_conn;
+                SQLiteCommand sqlite_cmd;
 
-            sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
-            sqlite_conn.Open();
+                sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
+                sqlite_conn.Open();
 
-            sqlite_cmd = sqlite_conn.CreateCommand();
-            sqlite_cmd.CommandText = query;
-            sqlite_cmd.ExecuteNonQuery();
+                sqlite_cmd = sqlite_conn.CreateCommand();
+                sqlite_cmd.CommandText = query;
+                sqlite_cmd.ExecuteNonQuery();
 
-            sqlite_conn.Close();
+                sqlite_conn.Close();
+            }
+            catch (Exception e)
+            {
+                Logger.Log.Error(e.ToString());
+            }
         }
 
         #region Converters
@@ -52,10 +59,14 @@ namespace TaxInspection.Extensions
 
         #endregion
 
+        #region Validations
+
         private static readonly Regex _onlyNumbersRegex = new Regex("[^0-9]+");
         public static bool TextContainsOnlyNumbers(string text)
         {
             return _onlyNumbersRegex.IsMatch(text);
         }
+
+        #endregion
     }
 }

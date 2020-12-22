@@ -30,10 +30,10 @@ namespace TaxInspection.Database_elements
 
         public Tax(int id, string name, string document, int isValid = 1)
         {
-            TaxId = id;
-            TaxName = name;
-            DocumentName = (document);
-            IsValid = isValid == 1;
+            this.TaxId = id;
+            this.TaxName = name;
+            this.DocumentName = (document);
+            this.IsValid = isValid == 1;
         }
 
         public override string ToString()

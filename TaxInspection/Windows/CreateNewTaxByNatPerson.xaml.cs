@@ -1,12 +1,14 @@
-﻿using System;
-using System.Windows;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using Finisar.SQLite;
-using TaxInspection.Database_elements;
-
+﻿
 namespace TaxInspection.Windows
 {
+    using System;
+    using Extensions;
+    using System.Windows;
+    using System.Collections.Generic;
+    using System.Text.RegularExpressions;
+    using Finisar.SQLite;
+    using TaxInspection.Database_elements;
+
     public partial class CreateNewTaxByNatPerson : Window
     {
         public CreateNewTaxByNatPerson()
@@ -38,27 +40,8 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if(tax == null)
+            if(!checkIfTaxIsValid(tax))
             {
-                MessageBox.Show("Помилка! Податку з такою назвою не існує!");
-                return;
-            }
-
-            if (PayDate.SelectedDate == null || PayDate.SelectedDate.Value > DateTime.Today)
-            {
-                MessageBox.Show("Помилка! Неприпустима дата!");
-                return;
-            }
-
-            if (int.Parse(Amount.Text) <= 0)
-            {
-                MessageBox.Show("Неприпустимий розмір оплати податку!");
-                return;
-            }
-
-            if (!tax.IsValid)
-            {
-                MessageBox.Show("Цей податок вже не є чинним!");
                 return;
             }
 
@@ -79,33 +62,48 @@ namespace TaxInspection.Windows
                 return;
             }
 
-            SQLiteConnection sqlite_conn = new SQLiteConnection(SQLDataLoader.DatabaseConnection);
-
-            SQLiteCommand sqlite_cmd;
-            sqlite_conn.Open();
-
             TaxPayedByNaturalPerson newTax = new TaxPayedByNaturalPerson(TaxPayedByNaturalPerson.MaxId++, tax.TaxId, natPerson.Id, tax.TaxName, natPerson.Name, natPerson.Surname, PayDate.SelectedDate.Value, int.Parse(Amount.Text));
 
             string date = Extensions.Tools.ConvertDayTimeToSqlDate(PayDate.SelectedDate.Value);
             string query = "INSERT INTO TaxesPayedByNatPersons(Id, TaxId, PayerId, TaxName, PayerName, PayerSurname, OnPayedDate, Amount) VALUES (" + newTax.Id + ", " + newTax.TaxId + ", " + newTax.PayerId + ", '" + newTax.TaxName + "', '" + newTax.PayerName + "', '" + newTax.PayerSurname + "', '" + date + "', " + newTax.Amount + ");";
-            
+
+            Tools.ExecuteQuery(query);
+
             ((App)Application.Current).TaxesPayedByNatPersons.Add(newTax);
-
-            sqlite_cmd = new SQLiteCommand(query, sqlite_conn);
-            sqlite_cmd.ExecuteNonQuery();
-
-            sqlite_conn.Close();
         }
 
-        private readonly Regex _registrationCodeRegex = new Regex("[^0-9]+");
-        private bool isTextAllowed(string text)
+        private bool checkIfTaxIsValid(Tax tax)
         {
-            return !_registrationCodeRegex.IsMatch(text);
+            if (tax == null)
+            {
+                MessageBox.Show("Помилка! Податку з такою назвою не існує!");
+                return false;
+            }
+
+            if (PayDate.SelectedDate == null || PayDate.SelectedDate.Value > DateTime.Today)
+            {
+                MessageBox.Show("Помилка! Неприпустима дата!");
+                return false;
+            }
+
+            if (int.Parse(Amount.Text) <= 0)
+            {
+                MessageBox.Show("Неприпустимий розмір оплати податку!");
+                return false;
+            }
+
+            if (!tax.IsValid)
+            {
+                MessageBox.Show("Цей податок вже не є чинним!");
+                return false;
+            }
+
+            return true;
         }
 
         public void CheckAmountInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
-            e.Handled = !isTextAllowed(e.Text);
+            e.Handled = Tools.TextContainsOnlyNumbers(e.Text);
         }
     }
 }

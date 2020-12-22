@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace TaxInspection.Database_elements
+﻿namespace TaxInspection.Database_elements
 {
+    using System;
+
     public partial class JuridicalPerson
     {
         public static int MaxId = 0;
@@ -13,10 +13,10 @@ namespace TaxInspection.Database_elements
         public JuridicalPerson() { }
         public JuridicalPerson(int id, string name, DateTime regDate, int code)
         {
-            Id = id;
-            Name = name;
-            RegistrationDate = regDate;
-            RegistrationCode = code;
+            this.Id = id;
+            this.Name = name;
+            this.RegistrationDate = regDate;
+            this.RegistrationCode = code;
         }
     }
 }
