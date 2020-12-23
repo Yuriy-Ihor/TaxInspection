@@ -41,12 +41,11 @@ namespace TaxInspection
 
         private void readAllTaxesPayedByJurPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
+            sqlite_cmd.CommandText = "SELECT * FROM TaxesPayedByJurPersons";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             try
             {
-                sqlite_cmd.CommandText = "SELECT * FROM TaxesPayedByJurPersons";
-
                 while (sqlite_datareader.Read())
                 {
                     int id = int.Parse(sqlite_datareader["Id"].ToString());
@@ -73,12 +72,11 @@ namespace TaxInspection
 
         private void readAllTaxesPayedByNatPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
+            sqlite_cmd.CommandText = "SELECT * FROM TaxesPayedByNatPersons";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             try
             {
-                sqlite_cmd.CommandText = "SELECT * FROM TaxesPayedByNatPersons";
-
                 while (sqlite_datareader.Read())
                 {
                     int id = int.Parse(sqlite_datareader["Id"].ToString());
@@ -106,12 +104,11 @@ namespace TaxInspection
 
         private void readAllTaxesFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
+            sqlite_cmd.CommandText = "SELECT * FROM Taxes";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             try
             {
-                sqlite_cmd.CommandText = "SELECT * FROM Taxes";
-
                 while (sqlite_datareader.Read())
                 {
                     int id = int.Parse(sqlite_datareader["Id"].ToString());
@@ -136,12 +133,11 @@ namespace TaxInspection
 
         private void readAllNaturalPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
+            sqlite_cmd.CommandText = "SELECT * FROM NaturalPersons";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             try
             {
-                sqlite_cmd.CommandText = "SELECT * FROM NaturalPersons";
-
                 while (sqlite_datareader.Read())
                 {
                     NaturalPerson newPerson = new NaturalPerson(int.Parse(sqlite_datareader["Id"].ToString()), sqlite_datareader["Name"].ToString(), sqlite_datareader["Surname"].ToString(), long.Parse(sqlite_datareader["IdentificationCode"].ToString()), int.Parse(sqlite_datareader["PassportCode"].ToString()));
@@ -160,12 +156,11 @@ namespace TaxInspection
 
         private void readAllJuridicalPersonsFromDatabase(SQLiteCommand sqlite_cmd, out SQLiteDataReader sqlite_datareader)
         {
+            sqlite_cmd.CommandText = "SELECT * FROM JuridicalPersons";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
 
             try
             {
-                sqlite_cmd.CommandText = "SELECT * FROM JuridicalPersons";
-
                 while (sqlite_datareader.Read())
                 {
                     DateTime dateTime = Extensions.Tools.GetDateTimeFromSql(sqlite_datareader["RegistrationDate"].ToString());

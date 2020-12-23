@@ -43,7 +43,7 @@ namespace TaxInspection.Extensions
             string month = date.Value.Month < 10 ? '0' + date.Value.Month.ToString() : date.Value.Month.ToString();
             string day = date.Value.Day < 10 ? '0' + date.Value.Day.ToString() : date.Value.Day.ToString();
             string rez = date.Value.Year + "-" + month + "-" + day;
-
+            
             return rez;
         }
         

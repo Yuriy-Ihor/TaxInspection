@@ -4,6 +4,14 @@ namespace TaxInspection
     using System.Windows;
     using TaxInspection.Windows;
     using Extensions;
+    using System;
+    using System.Text.Json;
+    using System.Xml.Serialization;
+    using System.IO;
+    using System.Runtime.Serialization;
+    using System.Runtime.Serialization.Json;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization.Formatters.Binary;
 
     public partial class MainWindow : Window
     {
@@ -59,6 +67,16 @@ namespace TaxInspection
         {
             var window = new TaxesPayedByJurPersons();
             window.Show();
+        }
+
+        public void LoadDataFromJson(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        public void StoreDataToJson(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
