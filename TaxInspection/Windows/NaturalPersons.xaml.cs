@@ -17,7 +17,7 @@ namespace TaxInspection.Windows
             var item = ListOfNaturalPersons.SelectedItem as NaturalPerson;
             if (item != null)
             {
-                if(checkIfPersonIsBusy(item))
+                if (this.checkIfPersonIsBusy(item))
                 {
                     MessageBox.Show("Ця особа вже записана в базі сплачених податків!");
                     return;

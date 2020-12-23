@@ -9,7 +9,7 @@ namespace TaxInspection
     public class SQLDataLoader
     {
         public static readonly string DatabaseConnection = @"Data Source=database.db;Version=3;Compress=True;";
-        public static bool DataLoaded = false;
+        public static bool DataLoaded { get; set; } = false;
 
         public void LoadSQLData()
         {
@@ -118,7 +118,7 @@ namespace TaxInspection
                     string taxName = sqlite_datareader["TaxName"].ToString();
                     string docName = sqlite_datareader["DocumentName"].ToString();
                     string str_isValid = sqlite_datareader["IsValid"].ToString();
-                    int isValid = (str_isValid.ToLower() == "true" ? 1 : 0);
+                    int isValid = str_isValid.ToLower() == "true" ? 1 : 0;
 
                     Tax newTax = new Tax(id, taxName, docName, isValid);
 

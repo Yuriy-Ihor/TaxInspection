@@ -14,18 +14,18 @@ namespace TaxInspection.Windows
             this.InitializeComponent();
 
             for (int i = 0; i < ((App)Application.Current).Taxes.Count; i++)
-                TaxesNames.Add(((App)Application.Current).Taxes[i].TaxName);
+                this.TaxesNames.Add(((App)Application.Current).Taxes[i].TaxName);
 
             for (int i = 0; i < ((App)Application.Current).NaturalPersons.Count; i++)
-                PayersNames.Add(((App)Application.Current).NaturalPersons[i].Name + " " + ((App)Application.Current).NaturalPersons[i].Surname);
+                this.PayersNames.Add(((App)Application.Current).NaturalPersons[i].Name + " " + ((App)Application.Current).NaturalPersons[i].Surname);
 
-            this.TaxNamesBox.AutoSuggestionList = TaxesNames;
-            this.PayersNamesBox.AutoSuggestionList = PayersNames;
+            this.TaxNamesBox.AutoSuggestionList = this.TaxesNames;
+            this.PayersNamesBox.AutoSuggestionList = this.PayersNames;
 
         }
 
-        public List<string> TaxesNames = new List<string>();
-        public List<string> PayersNames = new List<string>();
+        public List<string> TaxesNames { get; set; } = new List<string>();
+        public List<string> PayersNames { get; set; } = new List<string>();
 
         private void AddNewPerson(object sender, RoutedEventArgs e)
         {
@@ -38,7 +38,7 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if(!checkIfTaxIsValid(tax))
+            if (!this.checkIfTaxIsValid(tax))
             {
                 return;
             }
@@ -54,7 +54,7 @@ namespace TaxInspection.Windows
                 }
             }
 
-            if(natPerson == null)
+            if (natPerson == null)
             {
                 MessageBox.Show("Фізичної особи з таким іменем не існує!");
                 return;

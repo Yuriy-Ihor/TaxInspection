@@ -2,8 +2,8 @@
 namespace TaxInspection.Extensions
 {
     using System;
-    using Finisar.SQLite;
     using System.Text.RegularExpressions;
+    using Finisar.SQLite;
 
     public static class Tools
     {
@@ -29,12 +29,10 @@ namespace TaxInspection.Extensions
             }
         }
 
-        #region Converters
-
         public static string ConvertDayTimeToSqlDate(DateTime date)
         {
             string month = date.Month < 10 ? '0' + date.Month.ToString() : date.Month.ToString();
-            string day = (date.Day < 10 ? '0' + date.Day.ToString() : date.Day.ToString());
+            string day = date.Day < 10 ? '0' + date.Day.ToString() : date.Day.ToString();
             string rez = date.Year + "-" + month + "-" + day;
 
             return rez;
@@ -48,7 +46,7 @@ namespace TaxInspection.Extensions
 
             return rez;
         }
-
+        
         public static DateTime GetDateTimeFromSql(string date)
         {
             string[] dateArray = date.Split('.');
@@ -57,16 +55,10 @@ namespace TaxInspection.Extensions
             return dateTime;
         }
 
-        #endregion
-
-        #region Validations
-
-        private static readonly Regex _onlyNumbersRegex = new Regex("[^0-9]+");
+        public static readonly Regex OnlyNumbersRegex = new Regex("[^0-9]+");
         public static bool TextContainsOnlyNumbers(string text)
         {
-            return _onlyNumbersRegex.IsMatch(text);
+            return OnlyNumbersRegex.IsMatch(text);
         }
-
-        #endregion
     }
 }

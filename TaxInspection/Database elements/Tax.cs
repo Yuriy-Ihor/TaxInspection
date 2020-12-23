@@ -3,8 +3,6 @@ namespace TaxInspection.Database_elements
 {
     public partial class Tax
     {
-        public static int MaxId { get; set; } = 0;
-
         public Tax(int id, string name, string document, int isValid = 1)
         {
             this.TaxId = id;
@@ -13,6 +11,7 @@ namespace TaxInspection.Database_elements
             this.IsValid = isValid == 1;
         }
 
+        public static int MaxId { get; set; } = 0;
         public int TaxId { get; set; }
         public string TaxName { get; set; }
         public string DocumentName { get; set; }
@@ -28,7 +27,7 @@ namespace TaxInspection.Database_elements
             {
                 this._isValid = value;
 
-                if(SQLDataLoader.DataLoaded)
+                if (SQLDataLoader.DataLoaded)
                 {
                     Extensions.Tools.ExecuteQuery("UPDATE Taxes SET IsValid = " + (this._isValid ? 1 : 0) + " WHERE Id = " + this.TaxId);
                 }

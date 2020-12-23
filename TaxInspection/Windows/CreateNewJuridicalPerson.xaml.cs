@@ -29,7 +29,7 @@ namespace TaxInspection.Windows
 
             int code = int.Parse(Code.Text);
 
-            if (checkIfCodeIsUsed(code))
+            if (this.checkIfCodeIsUsed(code))
             {
                 MessageBox.Show("Помилка! У базі вже існує особа з таким Кодом ЄДРПОУ!");
                 return;

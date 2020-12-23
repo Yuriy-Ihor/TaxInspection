@@ -23,7 +23,7 @@ namespace TaxInspection.Windows
             var item = ListOfJuridicalPersons.SelectedItem as JuridicalPerson;
             if (item != null)
             {
-                if (checkIfPersonIsBusy(item))
+                if (this.checkIfPersonIsBusy(item))
                 {
                     MessageBox.Show("Дана юридична особа вже записана в базі сплачених податків!");
                     return;

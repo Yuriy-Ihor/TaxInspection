@@ -12,7 +12,8 @@ namespace TaxInspection
             Logger.Log.Info("Window_Loaded event execution started");
             SQLDataLoader dataLoader = new SQLDataLoader();
             dataLoader.LoadSQLData();
-            InitializeComponent();
+
+            this.InitializeComponent();
         }
 
         private void createTables()

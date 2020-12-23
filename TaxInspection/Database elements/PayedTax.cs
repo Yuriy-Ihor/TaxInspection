@@ -5,7 +5,7 @@ namespace TaxInspection.Database_elements
 
     public abstract class PayedTax
     {
-        public static int MaxId = 0;
+        public static int MaxId { get; set; } = 0;
         public int Id { get; set; }
         public int TaxId { get; set; } = 0;
         public int PayerId { get; set; } = 0;

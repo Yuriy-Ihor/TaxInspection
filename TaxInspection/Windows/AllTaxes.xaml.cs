@@ -25,8 +25,8 @@ namespace TaxInspection.Windows
 
             if (item != null)
             {
-                bool taxIsUsedInNaturalPersonsTable = checkIfTaxIsUsed(item, ((App)Application.Current).TaxesPayedByNatPersons);
-                bool taxIsUsedInJuridicalPersonsTable = checkIfTaxIsUsed(item, ((App)Application.Current).TaxesPayedByJurPersons);
+                bool taxIsUsedInNaturalPersonsTable = this.checkIfTaxIsUsed(item, ((App)Application.Current).TaxesPayedByNatPersons);
+                bool taxIsUsedInJuridicalPersonsTable = this.checkIfTaxIsUsed(item, ((App)Application.Current).TaxesPayedByJurPersons);
 
                 if (taxIsUsedInNaturalPersonsTable || taxIsUsedInJuridicalPersonsTable)
                 {

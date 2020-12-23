@@ -20,16 +20,11 @@
     /// </summary>  
     public partial class AutoCompleteTextBoxUserControl : UserControl
     {
-        #region Private properties.  
 
         /// <summary>  
         /// Auto suggestion list property.  
         /// </summary>  
         private List<string> autoSuggestionList = new List<string>();
-
-        #endregion
-
-        #region Default Constructor  
 
         /// <summary>  
         /// Initializes a new instance of the <see cref="AutoCompleteTextBoxUserControl" /> class.  
@@ -49,10 +44,6 @@
             }
         }
 
-        #endregion
-
-        #region Protected / Public properties.  
-
         /// <summary>  
         /// Gets or sets Auto suggestion list property.  
         /// </summary>  
@@ -61,10 +52,6 @@
             get { return this.autoSuggestionList; }
             set { this.autoSuggestionList = value; }
         }
-
-        #endregion
-
-        #region Open Auto Suggestion box method  
 
         /// <summary>  
         ///  Open Auto Suggestion box method  
@@ -86,10 +73,6 @@
             }
         }
 
-        #endregion
-
-        #region Close Auto Suggestion box method  
-
         /// <summary>  
         ///  Close Auto Suggestion box method  
         /// </summary>  
@@ -109,10 +92,6 @@
                 Console.Write(ex);
             }
         }
-
-        #endregion
-
-        #region Auto Text Box text changed the method  
 
         /// <summary>  
         ///  Auto Text Box text changed method.  
@@ -147,10 +126,6 @@
             }
         }
 
-        #endregion
-
-        #region Auto list selection changed method  
-
         /// <summary>  
         ///  Auto list selection changed method.  
         /// </summary>  
@@ -184,7 +159,5 @@
                 Console.Write(ex);
             }
         }
-
-        #endregion
     }
 }

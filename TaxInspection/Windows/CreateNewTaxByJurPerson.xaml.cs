@@ -14,33 +14,33 @@ namespace TaxInspection.Windows
 
             for (int i = 0; i < ((App)Application.Current).Taxes.Count; i++)
             {
-                TaxesNames.Add(((App)Application.Current).Taxes[i].TaxName);
+                this.TaxesNames.Add(((App)Application.Current).Taxes[i].TaxName);
             }
 
             for (int i = 0; i < ((App)Application.Current).JuridicalPersons.Count; i++)
             {
-                PayersNames.Add(((App)Application.Current).JuridicalPersons[i].Name);
+                this.PayersNames.Add(((App)Application.Current).JuridicalPersons[i].Name);
             }
 
-            this.TaxNamesBox.AutoSuggestionList = TaxesNames;
-            this.PayersNamesBox.AutoSuggestionList = PayersNames;
+            this.TaxNamesBox.AutoSuggestionList = this.TaxesNames;
+            this.PayersNamesBox.AutoSuggestionList = this.PayersNames;
         }
 
-        public List<string> TaxesNames = new List<string>();
-        public List<string> PayersNames = new List<string>();
+        public List<string> TaxesNames { get; set; } = new List<string>();
+        public List<string> PayersNames { get; set; } = new List<string>();
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Tax tax = null;
-            foreach(var item in ((App)Application.Current).Taxes)
+            foreach (var item in ((App)Application.Current).Taxes)
             {
-                if(item.TaxName == TaxNamesBox.autoTextBox.Text)
+                if (item.TaxName == TaxNamesBox.autoTextBox.Text)
                 {
                     tax = item;
                 }
             }
 
-            if(!checkIfTaxIsValid(tax))
+            if (!this.checkIfTaxIsValid(tax))
             {
                 return;
             }

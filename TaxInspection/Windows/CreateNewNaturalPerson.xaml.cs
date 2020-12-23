@@ -10,7 +10,7 @@ namespace TaxInspection.Windows
     {
         public CreateNewNaturalPerson()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         public void CheckIdentificationCodeInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
@@ -25,7 +25,7 @@ namespace TaxInspection.Windows
 
         private void CreateNewPerson(object sender, RoutedEventArgs e)
         {
-            if (!checkUserInputs())
+            if (!this.checkUserInputs())
             {
                 return;
             }
@@ -59,13 +59,13 @@ namespace TaxInspection.Windows
                 return false;
             }
 
-            if (checkIfIdentificationCodeIsUsed(long.Parse(IdentificationCode.Text)))
+            if (this.checkIfIdentificationCodeIsUsed(long.Parse(IdentificationCode.Text)))
             {
                 MessageBox.Show("Особа з таким ідентифікаційним вже існує!");
                 return false;
             }
 
-            if (checkIfPassportCodeIsUsed(int.Parse(PassportCode.Text)))
+            if (this.checkIfPassportCodeIsUsed(int.Parse(PassportCode.Text)))
             {
                 MessageBox.Show("Особа з таким кодом паспорту вже існує!");
                 return false;

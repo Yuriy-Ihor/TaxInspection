@@ -5,8 +5,6 @@ namespace TaxInspection.Database_elements
 
     public partial class TaxPayedByNaturalPerson : PayedTax
     {
-        public string PayerSurname { get; set; }
-
         public TaxPayedByNaturalPerson(int id, int tax, int payer, string taxName, string payerName, string payerSurname, DateTime payedDate, int amount)
         {
             this.Id = id;
@@ -18,5 +16,7 @@ namespace TaxInspection.Database_elements
             this.OnPayedDate = payedDate;
             this.Amount = amount;
         }
+
+        public string PayerSurname { get; set; }
     }
 }
