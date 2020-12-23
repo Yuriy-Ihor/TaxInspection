@@ -4,22 +4,18 @@ namespace TaxInspection
     using System.Windows;
     using TaxInspection.Windows;
     using Extensions;
-    using System;
-    using System.Text.Json;
-    using System.Xml.Serialization;
-    using System.IO;
-    using System.Runtime.Serialization;
-    using System.Runtime.Serialization.Json;
-    using System.Collections.Generic;
-    using System.Runtime.Serialization.Formatters.Binary;
+    using System.Collections.ObjectModel;
+    using Database_elements;
 
     public partial class MainWindow : Window
     {
+        private JSONSerializer _jSONSerializer = new JSONSerializer();
+        private SQLDataLoader _dataLoader = new SQLDataLoader();
+
         public MainWindow()
         {
             Logger.Log.Info("Window_Loaded event execution started");
-            SQLDataLoader dataLoader = new SQLDataLoader();
-            dataLoader.LoadSQLData();
+            _dataLoader.LoadSQLData();
 
             this.InitializeComponent();
         }
@@ -71,12 +67,20 @@ namespace TaxInspection
 
         public void LoadDataFromJson(object sender, RoutedEventArgs e)
         {
-
+            ((App)Application.Current).Taxes = new ObservableCollection<Tax>(_jSONSerializer.LoadDataFromJson<Tax>(JSONSerializer.TaxesFileName));
+            ((App)Application.Current).TaxesPayedByNatPersons = new ObservableCollection<TaxPayedByNaturalPerson>(_jSONSerializer.LoadDataFromJson<TaxPayedByNaturalPerson>(JSONSerializer.TaxesPayedByNaturalPersonFileName));
+            ((App)Application.Current).TaxesPayedByJurPersons = new ObservableCollection<TaxPayedByJuridicalPerson>(_jSONSerializer.LoadDataFromJson<TaxPayedByJuridicalPerson>(JSONSerializer.TaxesPayedByJuridicalPersonFileName));
+            ((App)Application.Current).NaturalPersons = new ObservableCollection<NaturalPerson>(_jSONSerializer.LoadDataFromJson<NaturalPerson>(JSONSerializer.NaturalPersonsFileName));
+            ((App)Application.Current).JuridicalPersons = new ObservableCollection<JuridicalPerson>(_jSONSerializer.LoadDataFromJson<JuridicalPerson>(JSONSerializer.JuridicalPersonsFileName));
         }
 
         public void StoreDataToJson(object sender, RoutedEventArgs e)
         {
-
+            _jSONSerializer.StoreDataToJson<Tax>(JSONSerializer.TaxesFileName, ((App)Application.Current).Taxes);
+            _jSONSerializer.StoreDataToJson<TaxPayedByNaturalPerson>(JSONSerializer.TaxesPayedByNaturalPersonFileName, ((App)Application.Current).TaxesPayedByNatPersons);
+            _jSONSerializer.StoreDataToJson<TaxPayedByJuridicalPerson>(JSONSerializer.TaxesPayedByJuridicalPersonFileName, ((App)Application.Current).TaxesPayedByJurPersons);
+            _jSONSerializer.StoreDataToJson<NaturalPerson>(JSONSerializer.NaturalPersonsFileName, ((App)Application.Current).NaturalPersons);
+            _jSONSerializer.StoreDataToJson<JuridicalPerson>(JSONSerializer.JuridicalPersonsFileName, ((App)Application.Current).JuridicalPersons);
         }
     }
 }

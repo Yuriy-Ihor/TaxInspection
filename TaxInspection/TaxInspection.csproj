@@ -111,6 +111,7 @@
       <DependentUpon>AutoCompleteTextBoxUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Extensions\Tools.cs" />
+    <Compile Include="JSONSerializer.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="SQLDataLoader.cs" />
     <Compile Include="Windows\AllTaxes.xaml.cs">
