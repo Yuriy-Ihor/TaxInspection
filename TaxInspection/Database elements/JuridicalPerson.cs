@@ -18,7 +18,7 @@
         }
 
         public static int MaxId { get; set; } = 0;
-        [DataMember]
+
         public DateTime RegistrationDate { get; set; }
         [DataMember]
         public int RegistrationCode { get; set; }

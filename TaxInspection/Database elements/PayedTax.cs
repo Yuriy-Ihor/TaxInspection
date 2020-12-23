@@ -24,7 +24,6 @@ namespace TaxInspection.Database_elements
         [DataMember]
         public int Amount { get; set; }
 
-        [DataMember]
         public DateTime OnPayedDate { get; set; } = DateTime.Now;
     }
 }
